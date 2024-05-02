@@ -1,0 +1,16 @@
+CRITICAL - 2023-08-29 07:50:07 --> The original file is not a valid file.
+in SYSTEMPATH\HTTP\Files\UploadedFile.php on line 137.
+ 1 SYSTEMPATH\HTTP\Files\UploadedFile.php(137): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+ 2 APPPATH\Controllers\HomeController.php(617): CodeIgniter\HTTP\Files\UploadedFile->move('C:\\xampp\\htdocs\\management_ukm\\assets/doc/', '_1.')
+ 3 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\HomeController->add_progja()
+ 4 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+ 5 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-29 09:28:28 --> The original file is not a valid file.
+in SYSTEMPATH\HTTP\Files\UploadedFile.php on line 137.
+ 1 SYSTEMPATH\HTTP\Files\UploadedFile.php(137): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+ 2 APPPATH\Controllers\HomeController.php(926): CodeIgniter\HTTP\Files\UploadedFile->move('C:\\xampp\\htdocs\\management_ukm\\assets/doc/', '_1.')
+ 3 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\HomeController->add_ukm()
+ 4 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+ 5 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

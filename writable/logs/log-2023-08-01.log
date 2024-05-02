@@ -1,0 +1,395 @@
+CRITICAL - 2023-08-01 05:56:04 --> Class 'Time' not found
+in APPPATH\Views\prestasi.php on line 25.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('prestasi', [], true)
+ 4 APPPATH\Controllers\HomeController.php(61): view('prestasi', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\HomeController->prestasi()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-01 05:58:05 --> Object of class DateTime could not be converted to string
+in APPPATH\Views\prestasi.php on line 25.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('prestasi', [], true)
+ 4 APPPATH\Controllers\HomeController.php(61): view('prestasi', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\HomeController->prestasi()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-01 07:19:32 --> mime_content_type(): Can only process string or stream arguments
+in APPPATH\Controllers\HomeController.php on line 107.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mime_content_type(): Can only process string or stream arguments', 'D:\\Dev\\xampp\\htdocs\\management_ukm\\app\\Controllers\\HomeController.php', 107, [...])
+ 2 APPPATH\Controllers\HomeController.php(107): mime_content_type(null)
+ 3 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\HomeController->downloadFile('1')
+ 4 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+ 5 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-01 07:20:43 --> Creating default object from empty value
+in SYSTEMPATH\HTTP\Response.php on line 168.
+ 1 SYSTEMPATH\HTTP\Response.php(168): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Creating default object from empty value', 'D:\\Dev\\xampp\\htdocs\\management_ukm\\system\\HTTP\\Response.php', 168, [...])
+ 2 APPPATH\Controllers\HomeController.php(123): CodeIgniter\HTTP\Response->__construct(Object(stdClass), 200)
+ 3 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\HomeController->downloadFile('1')
+ 4 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+ 5 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-01 07:24:15 --> Creating default object from empty value
+in SYSTEMPATH\HTTP\Response.php on line 168.
+ 1 SYSTEMPATH\HTTP\Response.php(168): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Creating default object from empty value', 'D:\\Dev\\xampp\\htdocs\\management_ukm\\system\\HTTP\\Response.php', 168, [...])
+ 2 APPPATH\Controllers\HomeController.php(125): CodeIgniter\HTTP\Response->__construct(Object(stdClass), 200)
+ 3 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\HomeController->downloadFile('1')
+ 4 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+ 5 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-01 07:25:08 --> Creating default object from empty value
+in SYSTEMPATH\HTTP\Response.php on line 168.
+ 1 SYSTEMPATH\HTTP\Response.php(168): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Creating default object from empty value', 'D:\\Dev\\xampp\\htdocs\\management_ukm\\system\\HTTP\\Response.php', 168, [...])
+ 2 APPPATH\Controllers\HomeController.php(125): CodeIgniter\HTTP\Response->__construct(Object(stdClass), 200)
+ 3 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\HomeController->downloadFile('1')
+ 4 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+ 5 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-01 07:25:14 --> Creating default object from empty value
+in SYSTEMPATH\HTTP\Response.php on line 168.
+ 1 SYSTEMPATH\HTTP\Response.php(168): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Creating default object from empty value', 'D:\\Dev\\xampp\\htdocs\\management_ukm\\system\\HTTP\\Response.php', 168, [...])
+ 2 APPPATH\Controllers\HomeController.php(125): CodeIgniter\HTTP\Response->__construct(Object(stdClass), 200)
+ 3 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\HomeController->downloadFile('1')
+ 4 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+ 5 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-01 07:28:15 --> mime_content_type(): Can only process string or stream arguments
+in APPPATH\Controllers\HomeController.php on line 107.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mime_content_type(): Can only process string or stream arguments', 'D:\\Dev\\xampp\\htdocs\\management_ukm\\app\\Controllers\\HomeController.php', 107, [...])
+ 2 APPPATH\Controllers\HomeController.php(107): mime_content_type(null)
+ 3 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\HomeController->downloadFile('1')
+ 4 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+ 5 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-01 07:30:22 --> Creating default object from empty value
+in SYSTEMPATH\HTTP\Response.php on line 168.
+ 1 SYSTEMPATH\HTTP\Response.php(168): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Creating default object from empty value', 'D:\\Dev\\xampp\\htdocs\\management_ukm\\system\\HTTP\\Response.php', 168, [...])
+ 2 APPPATH\Controllers\HomeController.php(121): CodeIgniter\HTTP\Response->__construct(Object(stdClass))
+ 3 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\HomeController->downloadFile('1')
+ 4 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+ 5 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-01 07:31:49 --> Creating default object from empty value
+in SYSTEMPATH\HTTP\Response.php on line 168.
+ 1 SYSTEMPATH\HTTP\Response.php(168): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Creating default object from empty value', 'D:\\Dev\\xampp\\htdocs\\management_ukm\\system\\HTTP\\Response.php', 168, [...])
+ 2 APPPATH\Controllers\HomeController.php(123): CodeIgniter\HTTP\Response->__construct(Object(stdClass), 200)
+ 3 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\HomeController->downloadFile('1')
+ 4 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+ 5 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-01 07:32:29 --> Call to undefined method stdClass::setHeader()
+in APPPATH\Controllers\HomeController.php on line 126.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\HomeController->downloadFile('2')
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-01 07:59:24 --> Creating default object from empty value
+in SYSTEMPATH\HTTP\Response.php on line 168.
+ 1 SYSTEMPATH\HTTP\Response.php(168): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Creating default object from empty value', 'D:\\Dev\\xampp\\htdocs\\management_ukm\\system\\HTTP\\Response.php', 168, [...])
+ 2 APPPATH\Controllers\HomeController.php(109): CodeIgniter\HTTP\Response->__construct(Object(stdClass), 200)
+ 3 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\HomeController->downloadFile('1')
+ 4 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+ 5 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-08-01 08:01:05 --> mysqli_sql_exception: Table 'ukm_db.uploads' doesn't exist in D:\Dev\xampp\htdocs\management_ukm\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\Dev\xampp\htdocs\management_ukm\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\Dev\xampp\htdocs\management_ukm\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\Dev\xampp\htdocs\management_ukm\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\Dev\xampp\htdocs\management_ukm\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\Dev\xampp\htdocs\management_ukm\app\Controllers\HomeController.php(102): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\Dev\xampp\htdocs\management_ukm\system\CodeIgniter.php(932): App\Controllers\HomeController->downloadFile('1')
+#6 D:\Dev\xampp\htdocs\management_ukm\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+#7 D:\Dev\xampp\htdocs\management_ukm\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\Dev\xampp\htdocs\management_ukm\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-08-01 08:01:05 --> Table 'ukm_db.uploads' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `uploads`
+WHERE `id_progja` = \'1\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `uploads`
+WHERE `id_progja` = \'1\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `uploads`
+WHERE `id_progja` = \'1\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `uploads`
+WHERE `id_progja` = :id_progja:', [...], false)
+ 5 APPPATH\Controllers\HomeController.php(102): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\HomeController->downloadFile('1')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-01 08:01:20 --> mysqli_fetch_array() expects parameter 1 to be mysqli_result, array given
+in APPPATH\Controllers\HomeController.php on line 105.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mysqli_fetch_array() expects parameter 1 to be mysqli_result, array given', 'D:\\Dev\\xampp\\htdocs\\management_ukm\\app\\Controllers\\HomeController.php', 105, [...])
+ 2 APPPATH\Controllers\HomeController.php(105): mysqli_fetch_array([...])
+ 3 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\HomeController->downloadFile('1')
+ 4 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+ 5 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-01 08:03:38 --> mysqli_fetch_array() expects parameter 1 to be mysqli_result, array given
+in APPPATH\Controllers\HomeController.php on line 105.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mysqli_fetch_array() expects parameter 1 to be mysqli_result, array given', 'D:\\Dev\\xampp\\htdocs\\management_ukm\\app\\Controllers\\HomeController.php', 105, [...])
+ 2 APPPATH\Controllers\HomeController.php(105): mysqli_fetch_array([...])
+ 3 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\HomeController->downloadFile('1')
+ 4 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+ 5 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-01 08:05:44 --> Attempt to assign property 'cookieSameSite' of non-object
+in SYSTEMPATH\HTTP\Response.php on line 168.
+ 1 SYSTEMPATH\HTTP\Response.php(168): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to assign property \'cookieSameSite\' of non-object', 'D:\\Dev\\xampp\\htdocs\\management_ukm\\system\\HTTP\\Response.php', 168, [...])
+ 2 APPPATH\Controllers\HomeController.php(108): CodeIgniter\HTTP\Response->__construct('%PDF-1.7
+%µµµµ
+1 0 obj
+<</Type/Catalog/Pages 2 0 R/Lang(en-ID) /StructTreeRoot 14 0 R/MarkInfo<</Marked true>>/Metadata 59 0 R/ViewerPreferences 60 0 R>>
+endobj
+2 0 obj
+<</Type/Pages/Count 1/Kids[ 3 0 R] >>
+endobj
+3 0 obj
+<</Type/Page/Parent 2 0 R/Resources<</Font<</F1 5 0 R/F2 9 0 R/F3 11 0 R>>/ExtGState<</GS7 7 0 R/GS8 8 0 R>>/ProcSet[/PDF/Text/ImageB/ImageC/ImageI] >>/MediaBox[ 0 0 595.32 841.92] /Contents 4 0 R/Group<</Type/Group/S/Transparency/CS/DeviceRGB>>/Tabs/S/StructParents 0>>
+endobj
+4 0 obj
+<</Filter/FlateDecode/Length 2686>>
+stream
+xú’\\Yo€H~7‡ˇ–¿æHªÕ>xÉúcgOºﬁD≥ã`∞‘»ëiIîV7øü™jR¶‹4\'’lÄ$÷a}UÕØÓ¢ƒŸµ¯Ò«≥w/ﬂº—O?âØ^äˇE2¬?Yñ*â8è•—"≥JÊZ¨oéè˛˝É®éè^åéèŒ˛ÆÑ“bÙÈ¯ﬂ	xòÂ26"ç3ô&b¥Ä7˝¸!”|Æò“£¨yÙÛÒ—ÔÉ√S3¯Ì˝–.F‚˙ıTﬁ_¡£èœ^\\O„¡ïxÖÔ¡óƒ[x&ºÉﬂ\\]Õ‡j¯1z{|ÙD˙ÁÒ—∑™`£XÊ™´Iﬁ,ˆ¡Ë•ù“â‘ZhïHì	%÷ßéèƒÎw/ÖË∑b:nùß2âEjbôÈF÷>1=Ù◊	†êji+R•eﬁ≈ˇXìA5˝¶+„ÅÅ≤πÌº0*ä' . "\0" . '«áﬂ' . "\0" . 'Â÷€b™…4Ã∏V#Ç´g„—Ö˝Ò˚`À≠Wldñ¯zU”¥ìí[√\\ìUxÒ>#3oEYïËzŒyë5\\¬‹ºÑû9^sLÚH™.˛*Ω‡æÆ`\'©è≈nçË∆⁄ø&ã˛
+åAQÏ√p”]Â“™⁄h›ÛÀ∞z˛π/ÜßvÄ∆˝¸Ω]êeOòe»ÅÜáUı,€2[vJŒª#¿Ë‚—bUlOƒàB”î‹Í\\ÃÒ«€rÕL‚4√' . "\0" . 'ÈÀ»XB„¥÷‚·úã—≤öêcVÀ†Ä∏X1•â¨LTtIóBYfòM&Mü≤áò339â§±]ÆQcÃ±fîh›!õ)C`f8-”(†«iå$4Nk$Œπx3Tjãµw:•d˙◊ „j¬ÃUHô˜∏ZJqâ%Í579	…ƒŒ‡8;C„¥ÏÙpŒ!è‡U‹63˘äŸù™LZsXAè¢)3EM$m“‡≥#®v¿©Æ!%H∫’©+\\¡øh∞!¸kú…$È(µB„¥‘Úp«WMñp≤ºêqå%r©≠“‹çù‰2 ü§«·åô√‡¸‚¨+¿≈úY’b‘á¥(∂‹ukäiÜàùŒπx;«≤H2„#m∑^&È«õ3pµXÙÈ¡≤∫[∫L#≤—©¯≤ı≤öŒÍjZT‚_ÿ0æ§Ó«™€sùä∑ò—S(–≈†∆H∑F£*j≥•¯mKŒwxöêÔyú(Àí¥¢êÙXäC÷úÛZsú=∑)≠ær
+Ò§âñŸﬁ4mÈ0cnsDõ’]Ω≠Ó±¿' . "\0" . '\\›∑x[ÃHAo£Ê‰.:óbuS›·OÆõQù≠àΩÙ	¥ßS`∏∏+>„xü3≥(Op‚+u"&$‰Ä\\µùT–üJwıèWòˆÇ⁄TÊ{ç’ïäÃ1"ï:Ò¡:Ú≈íõ@Z&∫GΩ€•ªÿ‹Ñ5VÊ˝ß	ótΩ¢lÒÆ®¶8hk.3≥ßç°≤ÛE∏DHÚÒ#úÌ—|Pêm¨kQW‘∂ûâMÌíWêÃŸáÿ†Oø\'ó∫£\'»“»vË≈÷÷‡7ßÃπÖÖö*Ô#i)∆7kpˇÂ¨ﬁ:ÿ,ÎgœA˚ïc»\'ÕS«2⁄ÛÁ>Xò¡CxWäá«qıRpú&	ÚqŒ≈GÓQı#’õ˙∑V±ïIﬁÉ5.+q1wNË§˚˙›Á.√ªÂnﬂ&(¿¡´Ë;Û»?VëT{ÓÊ…Iw!¡q≤è?/BM:|¨@∂ßµMÁ\\|¿êÖS±™◊M„˝ŒÍ™ˇa#i1æ¡»º*O!Ç∆Ã¨Nrô§áı˜YÕ<9∑¯[{æÔ‹FÛ
+CΩ‡8ı|úÍÒß
+\'∑Ùπ≈<ªµp“PóØâó&ë	è”064NÀXÁ\\¸√’ù‹Lçïå”¿-•ÀJº£YÙÆS†¯5®Ùê≈∑Ê˘∞Mb«˚3∑≈r˙ãÎv≥a≥Zr|ú8ˆÅ≤ï‡8ç≠Ñ∆imÂNßgrf)»◊Ï2Hë·„hõqOªÛ~§$5Ò3V¶∞ú9»ﬂÃôGÎ6é0Û{4Û±8èWòzπ6„3/q±ûfd˘sf3Å¸3Ô&ê9Ü∆iÕ—√9â≤cÒz2≈>ÿßK∂˘=*¸_î’F¸MqÁˆ@kì˜»r å\\lÚqå‚û˘CFŸãt–xòá˛÷ƒ2ÕOàÅ©èh`Íqõ ‘ò}0ìÚaúﬂÊVõíªu	~∆Ùùf ˚˜p¬NÖ√ÎÂ¶¬>Œˇ¡TÿÍjﬂ{,Ïãq–k1ØyÿàJåÁH¿<ö6ô¡ÖóéØæ|Àﬂaå≥âŒV‘p{<Ïu{ÓcôêäËg7Ùª—h[ÏﬁﬂﬁÔ2[ö@›∂Z—XlÖè∏áQíÿ§GüÉw§qˇsWsò$íj/:´osz∆ ü' . "\0" . '
+3àÚqh‹0DÀ€œÓ¡Ïô`\\¬<)⁄ÂÄÜ⁄?‡]òYó≈÷Ω∂‹9`÷‡+≈}≥kFœ∫õﬂ6nÇÊòÕDµ˘‰y± ∞Êç:NcŸÔÓjéocÛc@ÿ[ôˆ ‰6◊†µÂ6nÍÌ˘pà€P†ãÈ·|h[£Æ˜EÓJ∏Æ[=Fv›6‰€ÓX∫≠7Ë!–ØËwÊ\'Ù™ÛòÃ…™NRô¶=rÉ3¥árAíL◊‡Åà¥âÄ{{:¥Ó∏äZ´3©MèåÃvºeŒ-NJì√‘Ò≠ÑkBŸZâ¢-⁄n%»J<†@V‚·Ï¨ƒMZ1.RÇ›¢ˇ¬[û°ÙÂq∆∫◊.˚FY9.∂Ç.4¥°Ü˘=—≠∑æL^§;∏I’É4ﬂõäˆ‡⁄0ÿ¯‡i˛›Awi£oYÓÓ<
+∏‡A®˚uCz±ã≠h∆o(Íô6ËÌπöEΩª∞jíZ‹Á™GËòU2Y"Û∏G%oröé´Ø9∑+≤ª˘æ$]ÛXYß)Æªu™ìπÃ  îÚ1π≥!e§ÈÅic‹¢¨∂≠Ì4Àx¸É‚^/h}â≠ªµLMq	ﬂﬁÆºN;º©±æπEÉèôÏºw!£§R=Í1[ã5∂áR*ˆ ùÛg”-AqÕwœDfŒyLvÈW%(ÂZóË4‚¡÷ÌÉê«‰.âs©≤ë:Óã=†Âx˙>$ú∑ã™†q}€≠ns˜àv\\’#Äã®TJÕƒ∏≠l®+∞>tÙ≥÷∫K∞Æ?@Q∑hÛÉ&ZêuVdÕb*ô’§‰V™Â.¶¶˚ßJ{∞uµu±≠]£¯•ò4ã‰Ï9”ËØ<iö≠Áõq)˚ó÷h£œáe`k4ÔSèÙz˛h»˜mVœ∏<cND™ô„Øâ5v˙|ô∆_Ê’çÎíœÀ' . "\0" . 'ò◊p·}Ør´ºÁùôgñ8ÖµM·Ê¨[E‡∑_ªÂ	wÆaÒKµ<ú0k˚˜>®ÑÓ¯x|•÷% ' . "\0" . 'n”CCÓ∫˜¡¿Ãﬂc°ÚDöÙ†Bæa3/0`∂Ú¨aÜf„>¥…<◊‚˛.Ï+·∂∫–>¯AıôßI
+Gèœ∫kY3Oìp¢Ô›˚ˇ‘qﬂ≈ï°Ô}ﬂu"‹ﬁ9x-_·æ#ˇæ"(
+endstream
+endobj
+5 0 obj
+<</Type/Font/Subtype/TrueType/Name/F1/BaseFont/TimesNewRomanPS-BoldMT/Encoding/WinAnsiEncoding/FontDescriptor 6 0 R/FirstChar 32/LastChar 89/Widths 56 0 R>>
+endobj
+6 0 obj
+<</Type/FontDescriptor/FontName/TimesNewRomanPS-BoldMT/Flags 32/ItalicAngle 0/Ascent 891/Descent -216/CapHeight 677/AvgWidth 427/MaxWidth 2558/FontWeight 700/XHeight 250/Leading 42/StemV 42/FontBBox[ -558 -216 2000 677] >>
+endobj
+7 0 obj
+<</Type/ExtGState/BM/Normal/ca 1>>
+endobj
+8 0 obj
+<</Type/ExtGState/BM/Normal/CA 1>>
+endobj
+9 0 obj
+<</Type/Font/Subtype/TrueType/Name/F2/BaseFont/TimesNewRomanPSMT/Encoding/WinAnsiEncoding/FontDescriptor 10 0 R/FirstChar 32/LastChar 121/Widths 57 0 R>>
+endobj
+10 0 obj
+<</Type/FontDescriptor/FontName/TimesNewRomanPSMT/Flags 32/ItalicAngle 0/Ascent 891/Descent -216/CapHeight 693/AvgWidth 401/MaxWidth 2614/FontWeight 400/XHeight 250/Leading 42/StemV 40/FontBBox[ -568 -216 2046 693] >>
+endobj
+11 0 obj
+<</Type/Font/Subtype/TrueType/Name/F3/BaseFont/ArialMT/Encoding/WinAnsiEncoding/FontDescriptor 12 0 R/FirstChar 32/LastChar 32/Widths 58 0 R>>
+endobj
+12 0 obj
+<</Type/FontDescriptor/FontName/ArialMT/Flags 32/ItalicAngle 0/Ascent 905/Descent -210/CapHeight 728/AvgWidth 441/MaxWidth 2665/FontWeight 400/XHeight 250/Leading 33/StemV 44/FontBBox[ -665 -210 2000 728] >>
+endobj
+13 0 obj
+<</Author(Aliya Nurjannah) /Creator(˛ˇ' . "\0" . 'M' . "\0" . 'i' . "\0" . 'c' . "\0" . 'r' . "\0" . 'o' . "\0" . 's' . "\0" . 'o' . "\0" . 'f' . "\0" . 't' . "\0" . 'Æ' . "\0" . ' ' . "\0" . 'W' . "\0" . 'o' . "\0" . 'r' . "\0" . 'd' . "\0" . ' ' . "\0" . 'L' . "\0" . 'T' . "\0" . 'S' . "\0" . 'C) /CreationDate(D:20230426092415+08\'00\') /ModDate(D:20230426092415+08\'00\') /Producer(˛ˇ' . "\0" . 'M' . "\0" . 'i' . "\0" . 'c' . "\0" . 'r' . "\0" . 'o' . "\0" . 's' . "\0" . 'o' . "\0" . 'f' . "\0" . 't' . "\0" . 'Æ' . "\0" . ' ' . "\0" . 'W' . "\0" . 'o' . "\0" . 'r' . "\0" . 'd' . "\0" . ' ' . "\0" . 'L' . "\0" . 'T' . "\0" . 'S' . "\0" . 'C) >>
+endobj
+21 0 obj
+<</Type/ObjStm/N 40/First 297/Filter/FlateDecode/Length 673>>
+stream
+xúÕVÕN#1æ#Ò~Éƒ˘ùëªÄUE+Ì°⁄√–f€ävÇÜ©oøN=@W‘ùúˆ2é=˛>€âKê†X••e' . "\0" . '≠eAI —äñ¥§e⁄zP%IK	∆ñ†ë–4ë8ZÉC⁄Äséº¡#y:û\\<KPxr)°$z#°Ù
++c ¢ ≥DRå%YR¿PY≤{@ç
+ítd/˝¥í“ñ2Ç÷R.
+–QT
+:¬Y‚˜î4Éﬁë3ÒƒCπ*ôåT$¶†T•.»Neô6Å$}ŒŒƒ8Å$<àâãÈ€sì∂ŸÕ€´Mÿä€»_ ∆K–…Á¸¸Ù‰ 8¢ÜCÙpà±√!n8ƒá√!e∆QÊ∆˘cF`F`F`F`F`F`F`o›aÓæ≈≈[Ôåˆˆ]YÓ¶w‰L˙›¥Gˆ6“±ÄÓÀÄ˛h¿ﬁ.<∞¯*‡«1‹â0jØÙÏQ›~tYf‹†”†2¶AeLÉ òï1*cTˇ≠h:ÃeúÔ∂°n˚ibJ±‡cTÜü¶r,<ãÇ„Ë]∞»ÇY4≥hf—Ã¢ôE3ãfÕ,ÜY∏I”√!	ÀFÀFÀ‘ñ©-S[À}÷ï|Pﬁ¥	·!∆V<ƒM∏Øû”+"m∆∏jh#“ﬂÙûHñ˝ÙﬁÆG·µΩoÄı5q’±bî>Wı‚SôíÎc|ì0o≈èP-B√ÎÑy_ﬂ‘õu&´*eò51TÌ:÷ùﬁ¥Îﬂ-ˆ⁄œÿ<=∆¯Ùyt…Ú≤
+°MI∂‚æö7Ò@ˇæ¢ÔÅ~πÆ6qy`òl÷ãp‡Àq»mŸT[qΩ^Óö–’:⁄m_fÈÒ)ˇ⁄›Qµ/3Vˇ≥æa' . "\0" . 'ﬂö›]ñ—Eß\'' . "\0" . 'Áù
+endstream
+endobj
+42 0 obj
+<</O/List/ListNumbering/Decimal>>
+endobj
+56 0 obj
+[ 250 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 722 0 0 722 667 0 0 0 389 500 0 0 944 722 0 611 0 722 556 667 722 0 0 0 722] 
+endobj
+57 0 obj
+[ 250 0 0 500 0 0 0 0 0 0 0 0 250 333 250 278 500 500 500 500 500 500 500 500 500 500 278 0 0 0 0 0 0 722 667 0 722 611 0 0 722 333 389 722 611 889 722 722 556 0 667 556 611 722 722 0 0 722 0 0 0 0 0 0 0 444 500 444 500 444 333 500 500 278 278 500 278 778 500 500 500 0 333 389 278 500 500 722 0 500] 
+endobj
+58 0 obj
+[ 278] 
+endobj
+59 0 obj
+<</Type/Metadata/Subtype/XML/Length 3065>>
+stream
+<?xpacket begin="Ôªø" id="W5M0MpCehiHzreSzNTczkc9d"?><x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="3.1-701">
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<rdf:Description rdf:about=""  xmlns:pdf="http://ns.adobe.com/pdf/1.3/">
+<pdf:Producer>Microsoft¬Æ Word LTSC</pdf:Producer></rdf:Description>
+<rdf:Description rdf:about=""  xmlns:dc="http://purl.org/dc/elements/1.1/">
+<dc:creator><rdf:Seq><rdf:li>Aliya Nurjannah</rdf:li></rdf:Seq></dc:creator></rdf:Description>
+<rdf:Description rdf:about=""  xmlns:xmp="http://ns.adobe.com/xap/1.0/">
+<xmp:CreatorTool>Microsoft¬Æ Word LTSC</xmp:CreatorTool><xmp:CreateDate>2023-04-26T09:24:15+08:00</xmp:CreateDate><xmp:ModifyDate>2023-04-26T09:24:15+08:00</xmp:ModifyDate></rdf:Description>
+<rdf:Description rdf:about=""  xmlns:xmpMM="http://ns.adobe.com/xap/1.0/mm/">
+<xmpMM:DocumentID>uuid:E349D791-64F7-4B0D-ADA6-B716FEB36F90</xmpMM:DocumentID><xmpMM:InstanceID>uuid:E349D791-64F7-4B0D-ADA6-B716FEB36F90</xmpMM:InstanceID></rdf:Description>
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+</rdf:RDF></x:xmpmeta><?xpacket end="w"?>
+endstream
+endobj
+60 0 obj
+<</DisplayDocTitle true>>
+endobj
+61 0 obj
+<</Type/XRef/Size 61/W[ 1 4 2] /Root 1 0 R/Info 13 0 R/ID[<91D749E3F7640D4BADA6B716FEB36F90><91D749E3F7640D4BADA6B716FEB36F90>] /Filter/FlateDecode/Length 165>>
+stream
+xú5—∑¬PÄ·≥…‡å9XãâËÿÑñÅâ1-ïy‹è_qüN∫$=Û “21˘qÅóbïäsS‹£‚Ì·w≈?)¡A	]xãÿfX"+(`X¬ørk˙¢GïY`CÍ–Ä&¥†ËBp¡!Ç>ÕI…≥:)Å2Ha' . "\0" . '9å`ò¬Ê∞0R> Ω*ŸG…c•ÿâ|T-Y
+endstream
+endobj
+xref
+0 62
+0000000014 65535 f
+0000000017 00000 n
+0000000166 00000 n
+0000000222 00000 n
+0000000511 00000 n
+0000003272 00000 n
+0000003447 00000 n
+0000003688 00000 n
+0000003741 00000 n
+0000003794 00000 n
+0000003966 00000 n
+0000004203 00000 n
+0000004365 00000 n
+0000004592 00000 n
+0000000015 65535 f
+0000000016 65535 f
+0000000017 65535 f
+0000000018 65535 f
+0000000019 65535 f
+0000000020 65535 f
+0000000021 65535 f
+0000000022 65535 f
+0000000023 65535 f
+0000000024 65535 f
+0000000025 65535 f
+0000000026 65535 f
+0000000027 65535 f
+0000000028 65535 f
+0000000029 65535 f
+0000000030 65535 f
+0000000031 65535 f
+0000000032 65535 f
+0000000033 65535 f
+0000000034 65535 f
+0000000035 65535 f
+0000000036 65535 f
+0000000037 65535 f
+0000000038 65535 f
+0000000039 65535 f
+0000000040 65535 f
+0000000041 65535 f
+0000000043 65535 f
+0000005596 00000 n
+0000000044 65535 f
+0000000045 65535 f
+0000000046 65535 f
+0000000047 65535 f
+0000000048 65535 f
+0000000049 65535 f
+0000000050 65535 f
+0000000051 65535 f
+0000000052 65535 f
+0000000053 65535 f
+0000000054 65535 f
+0000000055 65535 f
+0000000000 65535 f
+0000005649 00000 n
+0000005816 00000 n
+0000006137 00000 n
+0000006164 00000 n
+0000009312 00000 n
+0000009357 00000 n
+trailer
+<</Size 62/Root 1 0 R/Info 13 0 R/ID[<91D749E3F7640D4BADA6B716FEB36F90><91D749E3F7640D4BADA6B716FEB36F90>] >>
+startxref
+9723
+%%EOF
+xref
+0 0
+trailer
+<</Size 62/Root 1 0 R/Info 13 0 R/ID[<91D749E3F7640D4BADA6B716FEB36F90><91D749E3F7640D4BADA6B716FEB36F90>] /Prev 9723/XRefStm 9357>>
+startxref
+11119
+%%EOF', 200)
+ 3 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\HomeController->downloadFile('2')
+ 4 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+ 5 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-01 08:45:17 --> Invalid argument supplied for foreach()
+in APPPATH\Views\lpj.php on line 23.
+ 1 APPPATH\Views\lpj.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argument supplied for foreach()', 'D:\\Dev\\xampp\\htdocs\\management_ukm\\app\\Views\\lpj.php', 23, [...])
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\Dev\\xampp\\htdocs\\management_ukm\\app\\Views\\lpj.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('lpj', [], true)
+ 5 APPPATH\Controllers\HomeController.php(102): view('lpj', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\HomeController->lpj()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-08-01 09:01:44 --> mysqli_sql_exception: Table 'ukm_db.anggota' doesn't exist in D:\Dev\xampp\htdocs\management_ukm\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\Dev\xampp\htdocs\management_ukm\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `anggota...', 0)
+#1 D:\Dev\xampp\htdocs\management_ukm\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `anggota...')
+#2 D:\Dev\xampp\htdocs\management_ukm\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `anggota...')
+#3 D:\Dev\xampp\htdocs\management_ukm\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `anggota...', Array, false)
+#4 D:\Dev\xampp\htdocs\management_ukm\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\Dev\xampp\htdocs\management_ukm\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\Dev\xampp\htdocs\management_ukm\app\Models\AnggotaModel.php(16): CodeIgniter\BaseModel->findAll()
+#7 D:\Dev\xampp\htdocs\management_ukm\app\Controllers\HomeController.php(111): App\Models\AnggotaModel->getAnggota()
+#8 D:\Dev\xampp\htdocs\management_ukm\system\CodeIgniter.php(932): App\Controllers\HomeController->anggota()
+#9 D:\Dev\xampp\htdocs\management_ukm\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+#10 D:\Dev\xampp\htdocs\management_ukm\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\Dev\xampp\htdocs\management_ukm\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-08-01 09:01:44 --> Table 'ukm_db.anggota' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `anggota`.*, `nama_ukm`.`nama_ukm`
+FROM `anggota`
+LEFT JOIN `nama_ukm` ON `anggota`.`id_ukm` = `nama_ukm`.`id_ukm`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `anggota`.*, `nama_ukm`.`nama_ukm`
+FROM `anggota`
+LEFT JOIN `nama_ukm` ON `anggota`.`id_ukm` = `nama_ukm`.`id_ukm`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `anggota`.*, `nama_ukm`.`nama_ukm`
+FROM `anggota`
+LEFT JOIN `nama_ukm` ON `anggota`.`id_ukm` = `nama_ukm`.`id_ukm`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `anggota`.*, `nama_ukm`.`nama_ukm`
+FROM `anggota`
+LEFT JOIN `nama_ukm` ON `anggota`.`id_ukm` = `nama_ukm`.`id_ukm`', [], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\AnggotaModel.php(16): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\HomeController.php(111): App\Models\AnggotaModel->getAnggota()
+ 9 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\HomeController->anggota()
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+11 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

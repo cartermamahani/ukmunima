@@ -1,0 +1,588 @@
+ERROR - 2023-11-20 13:32:38 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): php_network_getaddresses: getaddrinfo failed: No such host is known.  in C:\xampp\htdocs\management_ukm\system\Email\Email.php:1868
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fsockopen(): ph...', 'C:\\xampp\\htdocs...', 1868, Array)
+#1 C:\xampp\htdocs\management_ukm\system\Email\Email.php(1868): fsockopen('tls://smtp.goog...', 465, 0, 'php_network_get...', 20)
+#2 C:\xampp\htdocs\management_ukm\system\Email\Email.php(1782): CodeIgniter\Email\Email->SMTPConnect()
+#3 C:\xampp\htdocs\management_ukm\system\Email\Email.php(1667): CodeIgniter\Email\Email->sendWithSmtp()
+#4 C:\xampp\htdocs\management_ukm\system\Email\Email.php(1565): CodeIgniter\Email\Email->spoolEmail()
+#5 C:\xampp\htdocs\management_ukm\app\Controllers\HomeController.php(1475): CodeIgniter\Email\Email->send()
+#6 C:\xampp\htdocs\management_ukm\app\Controllers\HomeController.php(1510): App\Controllers\HomeController->sendmail('Biro Pelayanan ...', 'cartermamahani@...', 'CARTER MAMAHANI', 'Pendaftaran Pen...', false)
+#7 C:\xampp\htdocs\management_ukm\system\CodeIgniter.php(932): App\Controllers\HomeController->tolak_bpmk()
+#8 C:\xampp\htdocs\management_ukm\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+#9 C:\xampp\htdocs\management_ukm\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\management_ukm\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2023-11-20 13:32:38 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-11-20 13:32:38 --> 
+ERROR - 2023-11-20 13:32:52 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): php_network_getaddresses: getaddrinfo failed: No such host is known.  in C:\xampp\htdocs\management_ukm\system\Email\Email.php:1868
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fsockopen(): ph...', 'C:\\xampp\\htdocs...', 1868, Array)
+#1 C:\xampp\htdocs\management_ukm\system\Email\Email.php(1868): fsockopen('tls://smtp.goog...', 465, 0, 'php_network_get...', 20)
+#2 C:\xampp\htdocs\management_ukm\system\Email\Email.php(1782): CodeIgniter\Email\Email->SMTPConnect()
+#3 C:\xampp\htdocs\management_ukm\system\Email\Email.php(1667): CodeIgniter\Email\Email->sendWithSmtp()
+#4 C:\xampp\htdocs\management_ukm\system\Email\Email.php(1565): CodeIgniter\Email\Email->spoolEmail()
+#5 C:\xampp\htdocs\management_ukm\app\Controllers\HomeController.php(1475): CodeIgniter\Email\Email->send()
+#6 C:\xampp\htdocs\management_ukm\app\Controllers\HomeController.php(1510): App\Controllers\HomeController->sendmail('Biro Pelayanan ...', '', '', 'Pendaftaran Pen...', false)
+#7 C:\xampp\htdocs\management_ukm\system\CodeIgniter.php(932): App\Controllers\HomeController->tolak_bpmk()
+#8 C:\xampp\htdocs\management_ukm\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+#9 C:\xampp\htdocs\management_ukm\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\management_ukm\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2023-11-20 13:32:52 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-11-20 13:32:52 --> 
+ERROR - 2023-11-20 13:35:20 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): php_network_getaddresses: getaddrinfo failed: No such host is known.  in C:\xampp\htdocs\management_ukm\system\Email\Email.php:1868
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fsockopen(): ph...', 'C:\\xampp\\htdocs...', 1868, Array)
+#1 C:\xampp\htdocs\management_ukm\system\Email\Email.php(1868): fsockopen('tls://smtp.goog...', 465, 0, 'php_network_get...', 20)
+#2 C:\xampp\htdocs\management_ukm\system\Email\Email.php(1782): CodeIgniter\Email\Email->SMTPConnect()
+#3 C:\xampp\htdocs\management_ukm\system\Email\Email.php(1667): CodeIgniter\Email\Email->sendWithSmtp()
+#4 C:\xampp\htdocs\management_ukm\system\Email\Email.php(1565): CodeIgniter\Email\Email->spoolEmail()
+#5 C:\xampp\htdocs\management_ukm\app\Controllers\HomeController.php(1475): CodeIgniter\Email\Email->send()
+#6 C:\xampp\htdocs\management_ukm\app\Controllers\HomeController.php(1510): App\Controllers\HomeController->sendmail('Biro Pelayanan ...', '', '', 'Pendaftaran Pen...', false)
+#7 C:\xampp\htdocs\management_ukm\system\CodeIgniter.php(932): App\Controllers\HomeController->tolak_bpmk()
+#8 C:\xampp\htdocs\management_ukm\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+#9 C:\xampp\htdocs\management_ukm\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\management_ukm\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2023-11-20 13:35:20 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-11-20 13:35:20 --> 
+ERROR - 2023-11-20 13:37:11 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): php_network_getaddresses: getaddrinfo failed: No such host is known.  in C:\xampp\htdocs\management_ukm\system\Email\Email.php:1868
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fsockopen(): ph...', 'C:\\xampp\\htdocs...', 1868, Array)
+#1 C:\xampp\htdocs\management_ukm\system\Email\Email.php(1868): fsockopen('tls://smtp.goog...', 465, 0, 'php_network_get...', 20)
+#2 C:\xampp\htdocs\management_ukm\system\Email\Email.php(1782): CodeIgniter\Email\Email->SMTPConnect()
+#3 C:\xampp\htdocs\management_ukm\system\Email\Email.php(1667): CodeIgniter\Email\Email->sendWithSmtp()
+#4 C:\xampp\htdocs\management_ukm\system\Email\Email.php(1565): CodeIgniter\Email\Email->spoolEmail()
+#5 C:\xampp\htdocs\management_ukm\app\Controllers\HomeController.php(1475): CodeIgniter\Email\Email->send()
+#6 C:\xampp\htdocs\management_ukm\app\Controllers\HomeController.php(1510): App\Controllers\HomeController->sendmail('Biro Pelayanan ...', '', '', 'Pendaftaran Pen...', false)
+#7 C:\xampp\htdocs\management_ukm\system\CodeIgniter.php(932): App\Controllers\HomeController->tolak_bpmk()
+#8 C:\xampp\htdocs\management_ukm\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+#9 C:\xampp\htdocs\management_ukm\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\management_ukm\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2023-11-20 13:37:11 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-11-20 13:37:11 --> 
+ERROR - 2023-11-20 13:39:02 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): php_network_getaddresses: getaddrinfo failed: No such host is known.  in C:\xampp\htdocs\management_ukm\system\Email\Email.php:1868
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fsockopen(): ph...', 'C:\\xampp\\htdocs...', 1868, Array)
+#1 C:\xampp\htdocs\management_ukm\system\Email\Email.php(1868): fsockopen('tls://smtp.goog...', 465, 0, 'php_network_get...', 20)
+#2 C:\xampp\htdocs\management_ukm\system\Email\Email.php(1782): CodeIgniter\Email\Email->SMTPConnect()
+#3 C:\xampp\htdocs\management_ukm\system\Email\Email.php(1667): CodeIgniter\Email\Email->sendWithSmtp()
+#4 C:\xampp\htdocs\management_ukm\system\Email\Email.php(1565): CodeIgniter\Email\Email->spoolEmail()
+#5 C:\xampp\htdocs\management_ukm\app\Controllers\HomeController.php(1475): CodeIgniter\Email\Email->send()
+#6 C:\xampp\htdocs\management_ukm\app\Controllers\HomeController.php(1510): App\Controllers\HomeController->sendmail('Biro Pelayanan ...', '', '', 'Pendaftaran Pen...', false)
+#7 C:\xampp\htdocs\management_ukm\system\CodeIgniter.php(932): App\Controllers\HomeController->tolak_bpmk()
+#8 C:\xampp\htdocs\management_ukm\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+#9 C:\xampp\htdocs\management_ukm\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\management_ukm\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2023-11-20 13:39:02 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-11-20 13:39:02 --> 
+ERROR - 2023-11-20 13:42:42 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): php_network_getaddresses: getaddrinfo failed: No such host is known.  in C:\xampp\htdocs\management_ukm\system\Email\Email.php:1868
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fsockopen(): ph...', 'C:\\xampp\\htdocs...', 1868, Array)
+#1 C:\xampp\htdocs\management_ukm\system\Email\Email.php(1868): fsockopen('tls://smtp.goog...', 465, 0, 'php_network_get...', 20)
+#2 C:\xampp\htdocs\management_ukm\system\Email\Email.php(1782): CodeIgniter\Email\Email->SMTPConnect()
+#3 C:\xampp\htdocs\management_ukm\system\Email\Email.php(1667): CodeIgniter\Email\Email->sendWithSmtp()
+#4 C:\xampp\htdocs\management_ukm\system\Email\Email.php(1565): CodeIgniter\Email\Email->spoolEmail()
+#5 C:\xampp\htdocs\management_ukm\app\Controllers\HomeController.php(1475): CodeIgniter\Email\Email->send()
+#6 C:\xampp\htdocs\management_ukm\app\Controllers\HomeController.php(1510): App\Controllers\HomeController->sendmail('Biro Pelayanan ...', '', '', 'Pendaftaran Pen...', false)
+#7 C:\xampp\htdocs\management_ukm\system\CodeIgniter.php(932): App\Controllers\HomeController->tolak_bpmk()
+#8 C:\xampp\htdocs\management_ukm\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+#9 C:\xampp\htdocs\management_ukm\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\management_ukm\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2023-11-20 13:42:42 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-11-20 13:42:42 --> 
+ERROR - 2023-11-20 13:42:48 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): php_network_getaddresses: getaddrinfo failed: No such host is known.  in C:\xampp\htdocs\management_ukm\system\Email\Email.php:1868
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fsockopen(): ph...', 'C:\\xampp\\htdocs...', 1868, Array)
+#1 C:\xampp\htdocs\management_ukm\system\Email\Email.php(1868): fsockopen('tls://smtp.goog...', 465, 0, 'php_network_get...', 20)
+#2 C:\xampp\htdocs\management_ukm\system\Email\Email.php(1782): CodeIgniter\Email\Email->SMTPConnect()
+#3 C:\xampp\htdocs\management_ukm\system\Email\Email.php(1667): CodeIgniter\Email\Email->sendWithSmtp()
+#4 C:\xampp\htdocs\management_ukm\system\Email\Email.php(1565): CodeIgniter\Email\Email->spoolEmail()
+#5 C:\xampp\htdocs\management_ukm\app\Controllers\HomeController.php(1475): CodeIgniter\Email\Email->send()
+#6 C:\xampp\htdocs\management_ukm\app\Controllers\HomeController.php(1510): App\Controllers\HomeController->sendmail('Biro Pelayanan ...', '', '', 'Pendaftaran Pen...', false)
+#7 C:\xampp\htdocs\management_ukm\system\CodeIgniter.php(932): App\Controllers\HomeController->tolak_bpmk()
+#8 C:\xampp\htdocs\management_ukm\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+#9 C:\xampp\htdocs\management_ukm\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\management_ukm\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2023-11-20 13:42:48 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-11-20 13:42:48 --> 
+ERROR - 2023-11-20 13:56:38 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): php_network_getaddresses: getaddrinfo failed: No such host is known.  in C:\xampp\htdocs\management_ukm\system\Email\Email.php:1868
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fsockopen(): ph...', 'C:\\xampp\\htdocs...', 1868, Array)
+#1 C:\xampp\htdocs\management_ukm\system\Email\Email.php(1868): fsockopen('tls://smtp.goog...', 465, 0, 'php_network_get...', 20)
+#2 C:\xampp\htdocs\management_ukm\system\Email\Email.php(1782): CodeIgniter\Email\Email->SMTPConnect()
+#3 C:\xampp\htdocs\management_ukm\system\Email\Email.php(1667): CodeIgniter\Email\Email->sendWithSmtp()
+#4 C:\xampp\htdocs\management_ukm\system\Email\Email.php(1565): CodeIgniter\Email\Email->spoolEmail()
+#5 C:\xampp\htdocs\management_ukm\app\Controllers\HomeController.php(1475): CodeIgniter\Email\Email->send()
+#6 C:\xampp\htdocs\management_ukm\app\Controllers\HomeController.php(1510): App\Controllers\HomeController->sendmail('Biro Pelayanan ...', '', '', 'Pendaftaran Pen...', false)
+#7 C:\xampp\htdocs\management_ukm\system\CodeIgniter.php(932): App\Controllers\HomeController->tolak_bpmk()
+#8 C:\xampp\htdocs\management_ukm\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+#9 C:\xampp\htdocs\management_ukm\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\management_ukm\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2023-11-20 13:56:38 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-11-20 13:56:38 --> 
+ERROR - 2023-11-20 14:01:34 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): php_network_getaddresses: getaddrinfo failed: No such host is known.  in C:\xampp\htdocs\management_ukm\system\Email\Email.php:1868
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fsockopen(): ph...', 'C:\\xampp\\htdocs...', 1868, Array)
+#1 C:\xampp\htdocs\management_ukm\system\Email\Email.php(1868): fsockopen('tls://smtp.goog...', 465, 0, 'php_network_get...', 20)
+#2 C:\xampp\htdocs\management_ukm\system\Email\Email.php(1782): CodeIgniter\Email\Email->SMTPConnect()
+#3 C:\xampp\htdocs\management_ukm\system\Email\Email.php(1667): CodeIgniter\Email\Email->sendWithSmtp()
+#4 C:\xampp\htdocs\management_ukm\system\Email\Email.php(1565): CodeIgniter\Email\Email->spoolEmail()
+#5 C:\xampp\htdocs\management_ukm\app\Controllers\HomeController.php(1475): CodeIgniter\Email\Email->send()
+#6 C:\xampp\htdocs\management_ukm\app\Controllers\HomeController.php(1510): App\Controllers\HomeController->sendmail('Biro Pelayanan ...', '', '', 'Pendaftaran Pen...', false)
+#7 C:\xampp\htdocs\management_ukm\system\CodeIgniter.php(932): App\Controllers\HomeController->tolak_bpmk()
+#8 C:\xampp\htdocs\management_ukm\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+#9 C:\xampp\htdocs\management_ukm\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\management_ukm\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2023-11-20 14:01:34 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-11-20 14:01:34 --> 
+ERROR - 2023-11-20 14:05:57 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): php_network_getaddresses: getaddrinfo failed: No such host is known.  in C:\xampp\htdocs\management_ukm\system\Email\Email.php:1868
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fsockopen(): ph...', 'C:\\xampp\\htdocs...', 1868, Array)
+#1 C:\xampp\htdocs\management_ukm\system\Email\Email.php(1868): fsockopen('tls://smtp.goog...', 465, 0, 'php_network_get...', 20)
+#2 C:\xampp\htdocs\management_ukm\system\Email\Email.php(1782): CodeIgniter\Email\Email->SMTPConnect()
+#3 C:\xampp\htdocs\management_ukm\system\Email\Email.php(1667): CodeIgniter\Email\Email->sendWithSmtp()
+#4 C:\xampp\htdocs\management_ukm\system\Email\Email.php(1565): CodeIgniter\Email\Email->spoolEmail()
+#5 C:\xampp\htdocs\management_ukm\app\Controllers\HomeController.php(1475): CodeIgniter\Email\Email->send()
+#6 C:\xampp\htdocs\management_ukm\app\Controllers\HomeController.php(1510): App\Controllers\HomeController->sendmail('Biro Pelayanan ...', '', '', 'Pendaftaran Pen...', false)
+#7 C:\xampp\htdocs\management_ukm\system\CodeIgniter.php(932): App\Controllers\HomeController->tolak_bpmk()
+#8 C:\xampp\htdocs\management_ukm\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+#9 C:\xampp\htdocs\management_ukm\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\management_ukm\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2023-11-20 14:05:57 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-11-20 14:05:57 --> 
+ERROR - 2023-11-20 14:08:18 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): php_network_getaddresses: getaddrinfo failed: No such host is known.  in C:\xampp\htdocs\management_ukm\system\Email\Email.php:1868
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fsockopen(): ph...', 'C:\\xampp\\htdocs...', 1868, Array)
+#1 C:\xampp\htdocs\management_ukm\system\Email\Email.php(1868): fsockopen('tls://smtp.goog...', 465, 0, 'php_network_get...', 20)
+#2 C:\xampp\htdocs\management_ukm\system\Email\Email.php(1782): CodeIgniter\Email\Email->SMTPConnect()
+#3 C:\xampp\htdocs\management_ukm\system\Email\Email.php(1667): CodeIgniter\Email\Email->sendWithSmtp()
+#4 C:\xampp\htdocs\management_ukm\system\Email\Email.php(1565): CodeIgniter\Email\Email->spoolEmail()
+#5 C:\xampp\htdocs\management_ukm\app\Controllers\HomeController.php(1475): CodeIgniter\Email\Email->send()
+#6 C:\xampp\htdocs\management_ukm\app\Controllers\HomeController.php(1510): App\Controllers\HomeController->sendmail('Biro Pelayanan ...', '', '', 'Pendaftaran Pen...', false)
+#7 C:\xampp\htdocs\management_ukm\system\CodeIgniter.php(932): App\Controllers\HomeController->tolak_bpmk()
+#8 C:\xampp\htdocs\management_ukm\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+#9 C:\xampp\htdocs\management_ukm\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\management_ukm\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2023-11-20 14:08:18 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-11-20 14:08:18 --> 
+ERROR - 2023-11-20 14:14:42 --> Email: sendWithSmtp throwed ErrorException: fwrite(): SSL operation failed with code 1. OpenSSL Error messages:
+error:1420C0CF:SSL routines:ssl_write_internal:protocol is shutdown in C:\xampp\htdocs\management_ukm\system\Email\Email.php:2042
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fwrite(): SSL o...', 'C:\\xampp\\htdocs...', 2042, Array)
+#1 C:\xampp\htdocs\management_ukm\system\Email\Email.php(2042): fwrite(Resource id #121, 'EHLO localhost\r...')
+#2 C:\xampp\htdocs\management_ukm\system\Email\Email.php(1913): CodeIgniter\Email\Email->sendData('EHLO localhost\r...')
+#3 C:\xampp\htdocs\management_ukm\system\Email\Email.php(1899): CodeIgniter\Email\Email->sendCommand('hello')
+#4 C:\xampp\htdocs\management_ukm\system\Email\Email.php(1782): CodeIgniter\Email\Email->SMTPConnect()
+#5 C:\xampp\htdocs\management_ukm\system\Email\Email.php(1667): CodeIgniter\Email\Email->sendWithSmtp()
+#6 C:\xampp\htdocs\management_ukm\system\Email\Email.php(1565): CodeIgniter\Email\Email->spoolEmail()
+#7 C:\xampp\htdocs\management_ukm\app\Controllers\HomeController.php(1475): CodeIgniter\Email\Email->send()
+#8 C:\xampp\htdocs\management_ukm\app\Controllers\HomeController.php(1510): App\Controllers\HomeController->sendmail('Biro Pelayanan ...', '', '', 'Pendaftaran Pen...', false)
+#9 C:\xampp\htdocs\management_ukm\system\CodeIgniter.php(932): App\Controllers\HomeController->tolak_bpmk()
+#10 C:\xampp\htdocs\management_ukm\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+#11 C:\xampp\htdocs\management_ukm\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\management_ukm\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+ERROR - 2023-11-20 14:14:44 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-11-20 14:14:45 --> 
+ERROR - 2023-11-20 14:14:46 --> Email: sendWithSmtp throwed ErrorException: fwrite(): SSL operation failed with code 1. OpenSSL Error messages:
+error:1420C0CF:SSL routines:ssl_write_internal:protocol is shutdown in C:\xampp\htdocs\management_ukm\system\Email\Email.php:2042
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fwrite(): SSL o...', 'C:\\xampp\\htdocs...', 2042, Array)
+#1 C:\xampp\htdocs\management_ukm\system\Email\Email.php(2042): fwrite(Resource id #121, 'QUIT\r\n')
+#2 C:\xampp\htdocs\management_ukm\system\Email\Email.php(1951): CodeIgniter\Email\Email->sendData('QUIT\r\n')
+#3 C:\xampp\htdocs\management_ukm\system\Email\Email.php(2184): CodeIgniter\Email\Email->sendCommand('quit')
+#4 [internal function]: CodeIgniter\Email\Email->__destruct()
+#5 {main}
+ERROR - 2023-11-20 14:25:09 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): php_network_getaddresses: getaddrinfo failed: No such host is known.  in C:\xampp\htdocs\management_ukm\system\Email\Email.php:1868
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fsockopen(): ph...', 'C:\\xampp\\htdocs...', 1868, Array)
+#1 C:\xampp\htdocs\management_ukm\system\Email\Email.php(1868): fsockopen('tls://smtp.goog...', 465, 0, 'php_network_get...', 20)
+#2 C:\xampp\htdocs\management_ukm\system\Email\Email.php(1782): CodeIgniter\Email\Email->SMTPConnect()
+#3 C:\xampp\htdocs\management_ukm\system\Email\Email.php(1667): CodeIgniter\Email\Email->sendWithSmtp()
+#4 C:\xampp\htdocs\management_ukm\system\Email\Email.php(1565): CodeIgniter\Email\Email->spoolEmail()
+#5 C:\xampp\htdocs\management_ukm\app\Controllers\HomeController.php(1475): CodeIgniter\Email\Email->send()
+#6 C:\xampp\htdocs\management_ukm\app\Controllers\HomeController.php(1510): App\Controllers\HomeController->sendmail('Biro Pelayanan ...', '', '', 'Pendaftaran Pen...', false)
+#7 C:\xampp\htdocs\management_ukm\system\CodeIgniter.php(932): App\Controllers\HomeController->tolak_bpmk()
+#8 C:\xampp\htdocs\management_ukm\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+#9 C:\xampp\htdocs\management_ukm\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\management_ukm\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2023-11-20 14:25:10 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-11-20 14:25:10 --> 
+ERROR - 2023-11-20 14:30:17 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): php_network_getaddresses: getaddrinfo failed: No such host is known.  in C:\xampp\htdocs\management_ukm\system\Email\Email.php:1868
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fsockopen(): ph...', 'C:\\xampp\\htdocs...', 1868, Array)
+#1 C:\xampp\htdocs\management_ukm\system\Email\Email.php(1868): fsockopen('tls://smtp.goog...', 465, 0, 'php_network_get...', 20)
+#2 C:\xampp\htdocs\management_ukm\system\Email\Email.php(1782): CodeIgniter\Email\Email->SMTPConnect()
+#3 C:\xampp\htdocs\management_ukm\system\Email\Email.php(1667): CodeIgniter\Email\Email->sendWithSmtp()
+#4 C:\xampp\htdocs\management_ukm\system\Email\Email.php(1565): CodeIgniter\Email\Email->spoolEmail()
+#5 C:\xampp\htdocs\management_ukm\app\Controllers\HomeController.php(1475): CodeIgniter\Email\Email->send()
+#6 C:\xampp\htdocs\management_ukm\app\Controllers\HomeController.php(1510): App\Controllers\HomeController->sendmail('Biro Pelayanan ...', '', '', 'Pendaftaran Pen...', false)
+#7 C:\xampp\htdocs\management_ukm\system\CodeIgniter.php(932): App\Controllers\HomeController->tolak_bpmk()
+#8 C:\xampp\htdocs\management_ukm\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+#9 C:\xampp\htdocs\management_ukm\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\management_ukm\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2023-11-20 14:30:17 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-11-20 14:30:17 --> 
+ERROR - 2023-11-20 14:37:38 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): php_network_getaddresses: getaddrinfo failed: No such host is known.  in C:\xampp\htdocs\management_ukm\system\Email\Email.php:1868
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fsockopen(): ph...', 'C:\\xampp\\htdocs...', 1868, Array)
+#1 C:\xampp\htdocs\management_ukm\system\Email\Email.php(1868): fsockopen('tls://smtp.goog...', 465, 0, 'php_network_get...', 20)
+#2 C:\xampp\htdocs\management_ukm\system\Email\Email.php(1782): CodeIgniter\Email\Email->SMTPConnect()
+#3 C:\xampp\htdocs\management_ukm\system\Email\Email.php(1667): CodeIgniter\Email\Email->sendWithSmtp()
+#4 C:\xampp\htdocs\management_ukm\system\Email\Email.php(1565): CodeIgniter\Email\Email->spoolEmail()
+#5 C:\xampp\htdocs\management_ukm\app\Controllers\HomeController.php(1475): CodeIgniter\Email\Email->send()
+#6 C:\xampp\htdocs\management_ukm\app\Controllers\HomeController.php(1510): App\Controllers\HomeController->sendmail('Biro Pelayanan ...', '', '', 'Pendaftaran Pen...', false)
+#7 C:\xampp\htdocs\management_ukm\system\CodeIgniter.php(932): App\Controllers\HomeController->tolak_bpmk()
+#8 C:\xampp\htdocs\management_ukm\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+#9 C:\xampp\htdocs\management_ukm\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\management_ukm\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2023-11-20 14:37:38 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-11-20 14:37:38 --> 
+ERROR - 2023-11-20 14:40:38 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): php_network_getaddresses: getaddrinfo failed: No such host is known.  in C:\xampp\htdocs\management_ukm\system\Email\Email.php:1868
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fsockopen(): ph...', 'C:\\xampp\\htdocs...', 1868, Array)
+#1 C:\xampp\htdocs\management_ukm\system\Email\Email.php(1868): fsockopen('tls://smtp.goog...', 465, 0, 'php_network_get...', 20)
+#2 C:\xampp\htdocs\management_ukm\system\Email\Email.php(1782): CodeIgniter\Email\Email->SMTPConnect()
+#3 C:\xampp\htdocs\management_ukm\system\Email\Email.php(1667): CodeIgniter\Email\Email->sendWithSmtp()
+#4 C:\xampp\htdocs\management_ukm\system\Email\Email.php(1565): CodeIgniter\Email\Email->spoolEmail()
+#5 C:\xampp\htdocs\management_ukm\app\Controllers\HomeController.php(1475): CodeIgniter\Email\Email->send()
+#6 C:\xampp\htdocs\management_ukm\app\Controllers\HomeController.php(1510): App\Controllers\HomeController->sendmail('Biro Pelayanan ...', '', '', 'Pendaftaran Pen...', false)
+#7 C:\xampp\htdocs\management_ukm\system\CodeIgniter.php(932): App\Controllers\HomeController->tolak_bpmk()
+#8 C:\xampp\htdocs\management_ukm\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+#9 C:\xampp\htdocs\management_ukm\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\management_ukm\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2023-11-20 14:40:38 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-11-20 14:40:38 --> 
+ERROR - 2023-11-20 14:41:27 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): php_network_getaddresses: getaddrinfo failed: No such host is known.  in C:\xampp\htdocs\management_ukm\system\Email\Email.php:1868
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fsockopen(): ph...', 'C:\\xampp\\htdocs...', 1868, Array)
+#1 C:\xampp\htdocs\management_ukm\system\Email\Email.php(1868): fsockopen('tls://smtp.goog...', 465, 0, 'php_network_get...', 20)
+#2 C:\xampp\htdocs\management_ukm\system\Email\Email.php(1782): CodeIgniter\Email\Email->SMTPConnect()
+#3 C:\xampp\htdocs\management_ukm\system\Email\Email.php(1667): CodeIgniter\Email\Email->sendWithSmtp()
+#4 C:\xampp\htdocs\management_ukm\system\Email\Email.php(1565): CodeIgniter\Email\Email->spoolEmail()
+#5 C:\xampp\htdocs\management_ukm\app\Controllers\HomeController.php(1475): CodeIgniter\Email\Email->send()
+#6 C:\xampp\htdocs\management_ukm\app\Controllers\HomeController.php(1510): App\Controllers\HomeController->sendmail('Biro Pelayanan ...', '', '', 'Pendaftaran Pen...', false)
+#7 C:\xampp\htdocs\management_ukm\system\CodeIgniter.php(932): App\Controllers\HomeController->tolak_bpmk()
+#8 C:\xampp\htdocs\management_ukm\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+#9 C:\xampp\htdocs\management_ukm\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\management_ukm\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2023-11-20 14:41:27 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-11-20 14:41:27 --> 
+ERROR - 2023-11-20 14:42:17 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): php_network_getaddresses: getaddrinfo failed: No such host is known.  in C:\xampp\htdocs\management_ukm\system\Email\Email.php:1868
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fsockopen(): ph...', 'C:\\xampp\\htdocs...', 1868, Array)
+#1 C:\xampp\htdocs\management_ukm\system\Email\Email.php(1868): fsockopen('tls://smtp.goog...', 465, 0, 'php_network_get...', 20)
+#2 C:\xampp\htdocs\management_ukm\system\Email\Email.php(1782): CodeIgniter\Email\Email->SMTPConnect()
+#3 C:\xampp\htdocs\management_ukm\system\Email\Email.php(1667): CodeIgniter\Email\Email->sendWithSmtp()
+#4 C:\xampp\htdocs\management_ukm\system\Email\Email.php(1565): CodeIgniter\Email\Email->spoolEmail()
+#5 C:\xampp\htdocs\management_ukm\app\Controllers\HomeController.php(1475): CodeIgniter\Email\Email->send()
+#6 C:\xampp\htdocs\management_ukm\app\Controllers\HomeController.php(1510): App\Controllers\HomeController->sendmail('Biro Pelayanan ...', '', '', 'Pendaftaran Pen...', false)
+#7 C:\xampp\htdocs\management_ukm\system\CodeIgniter.php(932): App\Controllers\HomeController->tolak_bpmk()
+#8 C:\xampp\htdocs\management_ukm\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+#9 C:\xampp\htdocs\management_ukm\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\management_ukm\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2023-11-20 14:42:17 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-11-20 14:42:17 --> 
+ERROR - 2023-11-20 14:42:37 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): php_network_getaddresses: getaddrinfo failed: No such host is known.  in C:\xampp\htdocs\management_ukm\system\Email\Email.php:1868
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fsockopen(): ph...', 'C:\\xampp\\htdocs...', 1868, Array)
+#1 C:\xampp\htdocs\management_ukm\system\Email\Email.php(1868): fsockopen('tls://smtp.goog...', 465, 0, 'php_network_get...', 20)
+#2 C:\xampp\htdocs\management_ukm\system\Email\Email.php(1782): CodeIgniter\Email\Email->SMTPConnect()
+#3 C:\xampp\htdocs\management_ukm\system\Email\Email.php(1667): CodeIgniter\Email\Email->sendWithSmtp()
+#4 C:\xampp\htdocs\management_ukm\system\Email\Email.php(1565): CodeIgniter\Email\Email->spoolEmail()
+#5 C:\xampp\htdocs\management_ukm\app\Controllers\HomeController.php(1475): CodeIgniter\Email\Email->send()
+#6 C:\xampp\htdocs\management_ukm\app\Controllers\HomeController.php(1510): App\Controllers\HomeController->sendmail('Biro Pelayanan ...', '', '', 'Pendaftaran Pen...', false)
+#7 C:\xampp\htdocs\management_ukm\system\CodeIgniter.php(932): App\Controllers\HomeController->tolak_bpmk()
+#8 C:\xampp\htdocs\management_ukm\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+#9 C:\xampp\htdocs\management_ukm\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\management_ukm\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2023-11-20 14:42:37 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-11-20 14:42:37 --> 
+ERROR - 2023-11-20 14:52:54 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): php_network_getaddresses: getaddrinfo failed: No such host is known.  in C:\xampp\htdocs\management_ukm\system\Email\Email.php:1868
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fsockopen(): ph...', 'C:\\xampp\\htdocs...', 1868, Array)
+#1 C:\xampp\htdocs\management_ukm\system\Email\Email.php(1868): fsockopen('tls://smtp.goog...', 465, 0, 'php_network_get...', 20)
+#2 C:\xampp\htdocs\management_ukm\system\Email\Email.php(1782): CodeIgniter\Email\Email->SMTPConnect()
+#3 C:\xampp\htdocs\management_ukm\system\Email\Email.php(1667): CodeIgniter\Email\Email->sendWithSmtp()
+#4 C:\xampp\htdocs\management_ukm\system\Email\Email.php(1565): CodeIgniter\Email\Email->spoolEmail()
+#5 C:\xampp\htdocs\management_ukm\app\Controllers\HomeController.php(1475): CodeIgniter\Email\Email->send()
+#6 C:\xampp\htdocs\management_ukm\app\Controllers\HomeController.php(1510): App\Controllers\HomeController->sendmail('Biro Pelayanan ...', '', '', 'Pendaftaran Pen...', false)
+#7 C:\xampp\htdocs\management_ukm\system\CodeIgniter.php(932): App\Controllers\HomeController->tolak_bpmk()
+#8 C:\xampp\htdocs\management_ukm\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+#9 C:\xampp\htdocs\management_ukm\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\management_ukm\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2023-11-20 14:52:54 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-11-20 14:52:54 --> 
+ERROR - 2023-11-20 14:55:09 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): php_network_getaddresses: getaddrinfo failed: No such host is known.  in C:\xampp\htdocs\management_ukm\system\Email\Email.php:1868
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fsockopen(): ph...', 'C:\\xampp\\htdocs...', 1868, Array)
+#1 C:\xampp\htdocs\management_ukm\system\Email\Email.php(1868): fsockopen('tls://smtp.goog...', 465, 0, 'php_network_get...', 20)
+#2 C:\xampp\htdocs\management_ukm\system\Email\Email.php(1782): CodeIgniter\Email\Email->SMTPConnect()
+#3 C:\xampp\htdocs\management_ukm\system\Email\Email.php(1667): CodeIgniter\Email\Email->sendWithSmtp()
+#4 C:\xampp\htdocs\management_ukm\system\Email\Email.php(1565): CodeIgniter\Email\Email->spoolEmail()
+#5 C:\xampp\htdocs\management_ukm\app\Controllers\HomeController.php(1475): CodeIgniter\Email\Email->send()
+#6 C:\xampp\htdocs\management_ukm\app\Controllers\HomeController.php(1510): App\Controllers\HomeController->sendmail('Biro Pelayanan ...', '', '', 'Pendaftaran Pen...', false)
+#7 C:\xampp\htdocs\management_ukm\system\CodeIgniter.php(932): App\Controllers\HomeController->tolak_bpmk()
+#8 C:\xampp\htdocs\management_ukm\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+#9 C:\xampp\htdocs\management_ukm\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\management_ukm\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2023-11-20 14:55:09 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-11-20 14:55:09 --> 
+ERROR - 2023-11-20 14:57:22 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): php_network_getaddresses: getaddrinfo failed: No such host is known.  in C:\xampp\htdocs\management_ukm\system\Email\Email.php:1868
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fsockopen(): ph...', 'C:\\xampp\\htdocs...', 1868, Array)
+#1 C:\xampp\htdocs\management_ukm\system\Email\Email.php(1868): fsockopen('tls://smtp.goog...', 465, 0, 'php_network_get...', 20)
+#2 C:\xampp\htdocs\management_ukm\system\Email\Email.php(1782): CodeIgniter\Email\Email->SMTPConnect()
+#3 C:\xampp\htdocs\management_ukm\system\Email\Email.php(1667): CodeIgniter\Email\Email->sendWithSmtp()
+#4 C:\xampp\htdocs\management_ukm\system\Email\Email.php(1565): CodeIgniter\Email\Email->spoolEmail()
+#5 C:\xampp\htdocs\management_ukm\app\Controllers\HomeController.php(1475): CodeIgniter\Email\Email->send()
+#6 C:\xampp\htdocs\management_ukm\app\Controllers\HomeController.php(1510): App\Controllers\HomeController->sendmail('Biro Pelayanan ...', '', '', 'Pendaftaran Pen...', false)
+#7 C:\xampp\htdocs\management_ukm\system\CodeIgniter.php(932): App\Controllers\HomeController->tolak_bpmk()
+#8 C:\xampp\htdocs\management_ukm\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+#9 C:\xampp\htdocs\management_ukm\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\management_ukm\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2023-11-20 14:57:22 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-11-20 14:57:22 --> 
+ERROR - 2023-11-20 15:00:39 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): php_network_getaddresses: getaddrinfo failed: No such host is known.  in C:\xampp\htdocs\management_ukm\system\Email\Email.php:1868
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fsockopen(): ph...', 'C:\\xampp\\htdocs...', 1868, Array)
+#1 C:\xampp\htdocs\management_ukm\system\Email\Email.php(1868): fsockopen('tls://smtp.goog...', 465, 0, 'php_network_get...', 20)
+#2 C:\xampp\htdocs\management_ukm\system\Email\Email.php(1782): CodeIgniter\Email\Email->SMTPConnect()
+#3 C:\xampp\htdocs\management_ukm\system\Email\Email.php(1667): CodeIgniter\Email\Email->sendWithSmtp()
+#4 C:\xampp\htdocs\management_ukm\system\Email\Email.php(1565): CodeIgniter\Email\Email->spoolEmail()
+#5 C:\xampp\htdocs\management_ukm\app\Controllers\HomeController.php(1475): CodeIgniter\Email\Email->send()
+#6 C:\xampp\htdocs\management_ukm\app\Controllers\HomeController.php(1510): App\Controllers\HomeController->sendmail('Biro Pelayanan ...', '', '', 'Pendaftaran Pen...', false)
+#7 C:\xampp\htdocs\management_ukm\system\CodeIgniter.php(932): App\Controllers\HomeController->tolak_bpmk()
+#8 C:\xampp\htdocs\management_ukm\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+#9 C:\xampp\htdocs\management_ukm\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\management_ukm\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2023-11-20 15:00:39 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-11-20 15:00:39 --> 
+ERROR - 2023-11-20 15:03:07 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): php_network_getaddresses: getaddrinfo failed: No such host is known.  in C:\xampp\htdocs\management_ukm\system\Email\Email.php:1868
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fsockopen(): ph...', 'C:\\xampp\\htdocs...', 1868, Array)
+#1 C:\xampp\htdocs\management_ukm\system\Email\Email.php(1868): fsockopen('tls://smtp.goog...', 465, 0, 'php_network_get...', 20)
+#2 C:\xampp\htdocs\management_ukm\system\Email\Email.php(1782): CodeIgniter\Email\Email->SMTPConnect()
+#3 C:\xampp\htdocs\management_ukm\system\Email\Email.php(1667): CodeIgniter\Email\Email->sendWithSmtp()
+#4 C:\xampp\htdocs\management_ukm\system\Email\Email.php(1565): CodeIgniter\Email\Email->spoolEmail()
+#5 C:\xampp\htdocs\management_ukm\app\Controllers\HomeController.php(1475): CodeIgniter\Email\Email->send()
+#6 C:\xampp\htdocs\management_ukm\app\Controllers\HomeController.php(1510): App\Controllers\HomeController->sendmail('Biro Pelayanan ...', '', '', 'Pendaftaran Pen...', false)
+#7 C:\xampp\htdocs\management_ukm\system\CodeIgniter.php(932): App\Controllers\HomeController->tolak_bpmk()
+#8 C:\xampp\htdocs\management_ukm\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+#9 C:\xampp\htdocs\management_ukm\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\management_ukm\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2023-11-20 15:03:07 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-11-20 15:03:07 --> 
+ERROR - 2023-11-20 15:04:31 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): php_network_getaddresses: getaddrinfo failed: No such host is known.  in C:\xampp\htdocs\management_ukm\system\Email\Email.php:1868
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fsockopen(): ph...', 'C:\\xampp\\htdocs...', 1868, Array)
+#1 C:\xampp\htdocs\management_ukm\system\Email\Email.php(1868): fsockopen('tls://smtp.goog...', 465, 0, 'php_network_get...', 20)
+#2 C:\xampp\htdocs\management_ukm\system\Email\Email.php(1782): CodeIgniter\Email\Email->SMTPConnect()
+#3 C:\xampp\htdocs\management_ukm\system\Email\Email.php(1667): CodeIgniter\Email\Email->sendWithSmtp()
+#4 C:\xampp\htdocs\management_ukm\system\Email\Email.php(1565): CodeIgniter\Email\Email->spoolEmail()
+#5 C:\xampp\htdocs\management_ukm\app\Controllers\HomeController.php(1475): CodeIgniter\Email\Email->send()
+#6 C:\xampp\htdocs\management_ukm\app\Controllers\HomeController.php(1510): App\Controllers\HomeController->sendmail('Biro Pelayanan ...', '', '', 'Pendaftaran Pen...', false)
+#7 C:\xampp\htdocs\management_ukm\system\CodeIgniter.php(932): App\Controllers\HomeController->tolak_bpmk()
+#8 C:\xampp\htdocs\management_ukm\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+#9 C:\xampp\htdocs\management_ukm\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\management_ukm\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2023-11-20 15:04:31 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-11-20 15:04:31 --> 
+ERROR - 2023-11-20 15:17:54 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): php_network_getaddresses: getaddrinfo failed: No such host is known.  in C:\xampp\htdocs\management_ukm\system\Email\Email.php:1868
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fsockopen(): ph...', 'C:\\xampp\\htdocs...', 1868, Array)
+#1 C:\xampp\htdocs\management_ukm\system\Email\Email.php(1868): fsockopen('tls://smtp.goog...', 465, 0, 'php_network_get...', 20)
+#2 C:\xampp\htdocs\management_ukm\system\Email\Email.php(1782): CodeIgniter\Email\Email->SMTPConnect()
+#3 C:\xampp\htdocs\management_ukm\system\Email\Email.php(1667): CodeIgniter\Email\Email->sendWithSmtp()
+#4 C:\xampp\htdocs\management_ukm\system\Email\Email.php(1565): CodeIgniter\Email\Email->spoolEmail()
+#5 C:\xampp\htdocs\management_ukm\app\Controllers\HomeController.php(1475): CodeIgniter\Email\Email->send()
+#6 C:\xampp\htdocs\management_ukm\app\Controllers\HomeController.php(1510): App\Controllers\HomeController->sendmail('Biro Pelayanan ...', '', '', 'Pendaftaran Pen...', false)
+#7 C:\xampp\htdocs\management_ukm\system\CodeIgniter.php(932): App\Controllers\HomeController->tolak_bpmk()
+#8 C:\xampp\htdocs\management_ukm\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+#9 C:\xampp\htdocs\management_ukm\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\management_ukm\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2023-11-20 15:17:54 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-11-20 15:17:54 --> 
+ERROR - 2023-11-20 15:18:31 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): php_network_getaddresses: getaddrinfo failed: No such host is known.  in C:\xampp\htdocs\management_ukm\system\Email\Email.php:1868
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fsockopen(): ph...', 'C:\\xampp\\htdocs...', 1868, Array)
+#1 C:\xampp\htdocs\management_ukm\system\Email\Email.php(1868): fsockopen('tls://smtp.goog...', 465, 0, 'php_network_get...', 20)
+#2 C:\xampp\htdocs\management_ukm\system\Email\Email.php(1782): CodeIgniter\Email\Email->SMTPConnect()
+#3 C:\xampp\htdocs\management_ukm\system\Email\Email.php(1667): CodeIgniter\Email\Email->sendWithSmtp()
+#4 C:\xampp\htdocs\management_ukm\system\Email\Email.php(1565): CodeIgniter\Email\Email->spoolEmail()
+#5 C:\xampp\htdocs\management_ukm\app\Controllers\HomeController.php(1475): CodeIgniter\Email\Email->send()
+#6 C:\xampp\htdocs\management_ukm\app\Controllers\HomeController.php(1510): App\Controllers\HomeController->sendmail('Biro Pelayanan ...', '', '', 'Pendaftaran Pen...', false)
+#7 C:\xampp\htdocs\management_ukm\system\CodeIgniter.php(932): App\Controllers\HomeController->tolak_bpmk()
+#8 C:\xampp\htdocs\management_ukm\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+#9 C:\xampp\htdocs\management_ukm\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\management_ukm\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2023-11-20 15:18:31 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-11-20 15:18:31 --> 
+ERROR - 2023-11-20 15:19:24 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): php_network_getaddresses: getaddrinfo failed: No such host is known.  in C:\xampp\htdocs\management_ukm\system\Email\Email.php:1868
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fsockopen(): ph...', 'C:\\xampp\\htdocs...', 1868, Array)
+#1 C:\xampp\htdocs\management_ukm\system\Email\Email.php(1868): fsockopen('tls://smtp.goog...', 465, 0, 'php_network_get...', 20)
+#2 C:\xampp\htdocs\management_ukm\system\Email\Email.php(1782): CodeIgniter\Email\Email->SMTPConnect()
+#3 C:\xampp\htdocs\management_ukm\system\Email\Email.php(1667): CodeIgniter\Email\Email->sendWithSmtp()
+#4 C:\xampp\htdocs\management_ukm\system\Email\Email.php(1565): CodeIgniter\Email\Email->spoolEmail()
+#5 C:\xampp\htdocs\management_ukm\app\Controllers\HomeController.php(1475): CodeIgniter\Email\Email->send()
+#6 C:\xampp\htdocs\management_ukm\app\Controllers\HomeController.php(1510): App\Controllers\HomeController->sendmail('Biro Pelayanan ...', '', '', 'Pendaftaran Pen...', false)
+#7 C:\xampp\htdocs\management_ukm\system\CodeIgniter.php(932): App\Controllers\HomeController->tolak_bpmk()
+#8 C:\xampp\htdocs\management_ukm\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+#9 C:\xampp\htdocs\management_ukm\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\management_ukm\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2023-11-20 15:19:24 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-11-20 15:19:24 --> 
+ERROR - 2023-11-20 15:22:49 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): php_network_getaddresses: getaddrinfo failed: No such host is known.  in C:\xampp\htdocs\management_ukm\system\Email\Email.php:1868
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fsockopen(): ph...', 'C:\\xampp\\htdocs...', 1868, Array)
+#1 C:\xampp\htdocs\management_ukm\system\Email\Email.php(1868): fsockopen('tls://smtp.goog...', 465, 0, 'php_network_get...', 20)
+#2 C:\xampp\htdocs\management_ukm\system\Email\Email.php(1782): CodeIgniter\Email\Email->SMTPConnect()
+#3 C:\xampp\htdocs\management_ukm\system\Email\Email.php(1667): CodeIgniter\Email\Email->sendWithSmtp()
+#4 C:\xampp\htdocs\management_ukm\system\Email\Email.php(1565): CodeIgniter\Email\Email->spoolEmail()
+#5 C:\xampp\htdocs\management_ukm\app\Controllers\HomeController.php(1475): CodeIgniter\Email\Email->send()
+#6 C:\xampp\htdocs\management_ukm\app\Controllers\HomeController.php(1510): App\Controllers\HomeController->sendmail('Biro Pelayanan ...', '', '', 'Pendaftaran Pen...', false)
+#7 C:\xampp\htdocs\management_ukm\system\CodeIgniter.php(932): App\Controllers\HomeController->tolak_bpmk()
+#8 C:\xampp\htdocs\management_ukm\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+#9 C:\xampp\htdocs\management_ukm\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\management_ukm\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2023-11-20 15:22:49 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-11-20 15:22:49 --> 
+ERROR - 2023-11-20 15:27:00 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): php_network_getaddresses: getaddrinfo failed: No such host is known.  in C:\xampp\htdocs\management_ukm\system\Email\Email.php:1868
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fsockopen(): ph...', 'C:\\xampp\\htdocs...', 1868, Array)
+#1 C:\xampp\htdocs\management_ukm\system\Email\Email.php(1868): fsockopen('tls://smtp.goog...', 465, 0, 'php_network_get...', 20)
+#2 C:\xampp\htdocs\management_ukm\system\Email\Email.php(1782): CodeIgniter\Email\Email->SMTPConnect()
+#3 C:\xampp\htdocs\management_ukm\system\Email\Email.php(1667): CodeIgniter\Email\Email->sendWithSmtp()
+#4 C:\xampp\htdocs\management_ukm\system\Email\Email.php(1565): CodeIgniter\Email\Email->spoolEmail()
+#5 C:\xampp\htdocs\management_ukm\app\Controllers\HomeController.php(1475): CodeIgniter\Email\Email->send()
+#6 C:\xampp\htdocs\management_ukm\app\Controllers\HomeController.php(1510): App\Controllers\HomeController->sendmail('Biro Pelayanan ...', '', '', 'Pendaftaran Pen...', false)
+#7 C:\xampp\htdocs\management_ukm\system\CodeIgniter.php(932): App\Controllers\HomeController->tolak_bpmk()
+#8 C:\xampp\htdocs\management_ukm\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+#9 C:\xampp\htdocs\management_ukm\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\management_ukm\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2023-11-20 15:27:00 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-11-20 15:27:00 --> 
+ERROR - 2023-11-20 15:28:25 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): php_network_getaddresses: getaddrinfo failed: No such host is known.  in C:\xampp\htdocs\management_ukm\system\Email\Email.php:1868
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fsockopen(): ph...', 'C:\\xampp\\htdocs...', 1868, Array)
+#1 C:\xampp\htdocs\management_ukm\system\Email\Email.php(1868): fsockopen('tls://smtp.goog...', 465, 0, 'php_network_get...', 20)
+#2 C:\xampp\htdocs\management_ukm\system\Email\Email.php(1782): CodeIgniter\Email\Email->SMTPConnect()
+#3 C:\xampp\htdocs\management_ukm\system\Email\Email.php(1667): CodeIgniter\Email\Email->sendWithSmtp()
+#4 C:\xampp\htdocs\management_ukm\system\Email\Email.php(1565): CodeIgniter\Email\Email->spoolEmail()
+#5 C:\xampp\htdocs\management_ukm\app\Controllers\HomeController.php(1475): CodeIgniter\Email\Email->send()
+#6 C:\xampp\htdocs\management_ukm\app\Controllers\HomeController.php(1510): App\Controllers\HomeController->sendmail('Biro Pelayanan ...', '', '', 'Pendaftaran Pen...', false)
+#7 C:\xampp\htdocs\management_ukm\system\CodeIgniter.php(932): App\Controllers\HomeController->tolak_bpmk()
+#8 C:\xampp\htdocs\management_ukm\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+#9 C:\xampp\htdocs\management_ukm\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\management_ukm\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2023-11-20 15:28:25 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-11-20 15:28:25 --> 
+ERROR - 2023-11-20 15:42:12 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): php_network_getaddresses: getaddrinfo failed: No such host is known.  in C:\xampp\htdocs\management_ukm\system\Email\Email.php:1868
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fsockopen(): ph...', 'C:\\xampp\\htdocs...', 1868, Array)
+#1 C:\xampp\htdocs\management_ukm\system\Email\Email.php(1868): fsockopen('tls://smtp.goog...', 465, 0, 'php_network_get...', 20)
+#2 C:\xampp\htdocs\management_ukm\system\Email\Email.php(1782): CodeIgniter\Email\Email->SMTPConnect()
+#3 C:\xampp\htdocs\management_ukm\system\Email\Email.php(1667): CodeIgniter\Email\Email->sendWithSmtp()
+#4 C:\xampp\htdocs\management_ukm\system\Email\Email.php(1565): CodeIgniter\Email\Email->spoolEmail()
+#5 C:\xampp\htdocs\management_ukm\app\Controllers\HomeController.php(1475): CodeIgniter\Email\Email->send()
+#6 C:\xampp\htdocs\management_ukm\app\Controllers\HomeController.php(1510): App\Controllers\HomeController->sendmail('Biro Pelayanan ...', '', '', 'Pendaftaran Pen...', false)
+#7 C:\xampp\htdocs\management_ukm\system\CodeIgniter.php(932): App\Controllers\HomeController->tolak_bpmk()
+#8 C:\xampp\htdocs\management_ukm\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+#9 C:\xampp\htdocs\management_ukm\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\management_ukm\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2023-11-20 15:42:12 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-11-20 15:42:12 --> 
+ERROR - 2023-11-20 15:42:45 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): php_network_getaddresses: getaddrinfo failed: No such host is known.  in C:\xampp\htdocs\management_ukm\system\Email\Email.php:1868
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fsockopen(): ph...', 'C:\\xampp\\htdocs...', 1868, Array)
+#1 C:\xampp\htdocs\management_ukm\system\Email\Email.php(1868): fsockopen('tls://smtp.goog...', 465, 0, 'php_network_get...', 20)
+#2 C:\xampp\htdocs\management_ukm\system\Email\Email.php(1782): CodeIgniter\Email\Email->SMTPConnect()
+#3 C:\xampp\htdocs\management_ukm\system\Email\Email.php(1667): CodeIgniter\Email\Email->sendWithSmtp()
+#4 C:\xampp\htdocs\management_ukm\system\Email\Email.php(1565): CodeIgniter\Email\Email->spoolEmail()
+#5 C:\xampp\htdocs\management_ukm\app\Controllers\HomeController.php(1475): CodeIgniter\Email\Email->send()
+#6 C:\xampp\htdocs\management_ukm\app\Controllers\HomeController.php(1510): App\Controllers\HomeController->sendmail('Biro Pelayanan ...', '', '', 'Pendaftaran Pen...', false)
+#7 C:\xampp\htdocs\management_ukm\system\CodeIgniter.php(932): App\Controllers\HomeController->tolak_bpmk()
+#8 C:\xampp\htdocs\management_ukm\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+#9 C:\xampp\htdocs\management_ukm\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\management_ukm\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2023-11-20 15:42:45 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-11-20 15:42:45 --> 
+ERROR - 2023-11-20 15:43:42 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): php_network_getaddresses: getaddrinfo failed: No such host is known.  in C:\xampp\htdocs\management_ukm\system\Email\Email.php:1868
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fsockopen(): ph...', 'C:\\xampp\\htdocs...', 1868, Array)
+#1 C:\xampp\htdocs\management_ukm\system\Email\Email.php(1868): fsockopen('tls://smtp.goog...', 465, 0, 'php_network_get...', 20)
+#2 C:\xampp\htdocs\management_ukm\system\Email\Email.php(1782): CodeIgniter\Email\Email->SMTPConnect()
+#3 C:\xampp\htdocs\management_ukm\system\Email\Email.php(1667): CodeIgniter\Email\Email->sendWithSmtp()
+#4 C:\xampp\htdocs\management_ukm\system\Email\Email.php(1565): CodeIgniter\Email\Email->spoolEmail()
+#5 C:\xampp\htdocs\management_ukm\app\Controllers\HomeController.php(1475): CodeIgniter\Email\Email->send()
+#6 C:\xampp\htdocs\management_ukm\app\Controllers\HomeController.php(1510): App\Controllers\HomeController->sendmail('Biro Pelayanan ...', '', '', 'Pendaftaran Pen...', false)
+#7 C:\xampp\htdocs\management_ukm\system\CodeIgniter.php(932): App\Controllers\HomeController->tolak_bpmk()
+#8 C:\xampp\htdocs\management_ukm\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+#9 C:\xampp\htdocs\management_ukm\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\management_ukm\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2023-11-20 15:43:42 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-11-20 15:43:42 --> 
+ERROR - 2023-11-20 15:47:20 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): php_network_getaddresses: getaddrinfo failed: No such host is known.  in C:\xampp\htdocs\management_ukm\system\Email\Email.php:1868
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fsockopen(): ph...', 'C:\\xampp\\htdocs...', 1868, Array)
+#1 C:\xampp\htdocs\management_ukm\system\Email\Email.php(1868): fsockopen('tls://smtp.goog...', 465, 0, 'php_network_get...', 20)
+#2 C:\xampp\htdocs\management_ukm\system\Email\Email.php(1782): CodeIgniter\Email\Email->SMTPConnect()
+#3 C:\xampp\htdocs\management_ukm\system\Email\Email.php(1667): CodeIgniter\Email\Email->sendWithSmtp()
+#4 C:\xampp\htdocs\management_ukm\system\Email\Email.php(1565): CodeIgniter\Email\Email->spoolEmail()
+#5 C:\xampp\htdocs\management_ukm\app\Controllers\HomeController.php(1475): CodeIgniter\Email\Email->send()
+#6 C:\xampp\htdocs\management_ukm\app\Controllers\HomeController.php(1510): App\Controllers\HomeController->sendmail('Biro Pelayanan ...', '', '', 'Pendaftaran Pen...', false)
+#7 C:\xampp\htdocs\management_ukm\system\CodeIgniter.php(932): App\Controllers\HomeController->tolak_bpmk()
+#8 C:\xampp\htdocs\management_ukm\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+#9 C:\xampp\htdocs\management_ukm\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\management_ukm\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2023-11-20 15:47:20 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-11-20 15:47:20 --> 
+ERROR - 2023-11-20 15:49:56 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): php_network_getaddresses: getaddrinfo failed: No such host is known.  in C:\xampp\htdocs\management_ukm\system\Email\Email.php:1868
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fsockopen(): ph...', 'C:\\xampp\\htdocs...', 1868, Array)
+#1 C:\xampp\htdocs\management_ukm\system\Email\Email.php(1868): fsockopen('tls://smtp.goog...', 465, 0, 'php_network_get...', 20)
+#2 C:\xampp\htdocs\management_ukm\system\Email\Email.php(1782): CodeIgniter\Email\Email->SMTPConnect()
+#3 C:\xampp\htdocs\management_ukm\system\Email\Email.php(1667): CodeIgniter\Email\Email->sendWithSmtp()
+#4 C:\xampp\htdocs\management_ukm\system\Email\Email.php(1565): CodeIgniter\Email\Email->spoolEmail()
+#5 C:\xampp\htdocs\management_ukm\app\Controllers\HomeController.php(1475): CodeIgniter\Email\Email->send()
+#6 C:\xampp\htdocs\management_ukm\app\Controllers\HomeController.php(1510): App\Controllers\HomeController->sendmail('Biro Pelayanan ...', '', '', 'Pendaftaran Pen...', false)
+#7 C:\xampp\htdocs\management_ukm\system\CodeIgniter.php(932): App\Controllers\HomeController->tolak_bpmk()
+#8 C:\xampp\htdocs\management_ukm\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+#9 C:\xampp\htdocs\management_ukm\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\management_ukm\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2023-11-20 15:49:58 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-11-20 15:49:58 --> 

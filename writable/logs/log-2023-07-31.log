@@ -1,0 +1,352 @@
+CRITICAL - 2023-07-31 10:57:30 --> Cannot call constructor
+in APPPATH\Controllers\HomeController.php on line 12.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\HomeController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-31 11:18:50 --> Class 'App\Models\LoginModel' not found
+in APPPATH\Controllers\HomeController.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\HomeController->login()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-31 11:21:02 --> Class 'App\Models\LoginModel' not found
+in APPPATH\Controllers\HomeController.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\HomeController->login()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-31 11:25:20 --> Class 'App\Models\LoginModel' not found
+in APPPATH\Controllers\HomeController.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\HomeController->login()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-31 11:26:57 --> Class 'App\Model\LoginModel' not found
+in APPPATH\Controllers\HomeController.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\HomeController->login()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-31 11:27:17 --> Class 'App\Model\LoginModel' not found
+in APPPATH\Controllers\HomeController.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\HomeController->login()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-31 11:27:37 --> Class 'App\Models\LoginModel' not found
+in APPPATH\Controllers\HomeController.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\HomeController->login()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-31 11:28:36 --> Class 'App\Models\BaseModel' not found
+in APPPATH\Models\LoginModel.php on line 6.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(312): include_once()
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('D:\\Dev\\xampp\\htdocs\\management_ukm\\app\\Models\\LoginModel.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\LoginModel')
+ 4 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\LoginModel')
+ 5 APPPATH\Controllers\HomeController.php(22): spl_autoload_call('App\\Models\\LoginModel')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\HomeController->login()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-31 12:18:21 --> mysqli_sql_exception: Table 'ukm_db.nama_ukm' doesn't exist in D:\Dev\xampp\htdocs\management_ukm\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\Dev\xampp\htdocs\management_ukm\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\Dev\xampp\htdocs\management_ukm\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\Dev\xampp\htdocs\management_ukm\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\Dev\xampp\htdocs\management_ukm\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\Dev\xampp\htdocs\management_ukm\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\Dev\xampp\htdocs\management_ukm\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\Dev\xampp\htdocs\management_ukm\app\Controllers\HomeController.php(14): CodeIgniter\BaseModel->findAll()
+#7 D:\Dev\xampp\htdocs\management_ukm\system\CodeIgniter.php(932): App\Controllers\HomeController->index()
+#8 D:\Dev\xampp\htdocs\management_ukm\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+#9 D:\Dev\xampp\htdocs\management_ukm\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\Dev\xampp\htdocs\management_ukm\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-07-31 12:18:21 --> Table 'ukm_db.nama_ukm' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `nama_ukm`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `nama_ukm`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `nama_ukm`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `nama_ukm`', [], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\HomeController.php(14): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\HomeController->index()
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+10 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-31 12:52:54 --> mysqli_sql_exception: Unknown column 'id' in 'where clause' in D:\Dev\xampp\htdocs\management_ukm\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\Dev\xampp\htdocs\management_ukm\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\Dev\xampp\htdocs\management_ukm\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\Dev\xampp\htdocs\management_ukm\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\Dev\xampp\htdocs\management_ukm\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\Dev\xampp\htdocs\management_ukm\system\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\Dev\xampp\htdocs\management_ukm\system\BaseModel.php(656): CodeIgniter\Model->doFirst()
+#6 D:\Dev\xampp\htdocs\management_ukm\app\Controllers\HomeController.php(43): CodeIgniter\BaseModel->first()
+#7 D:\Dev\xampp\htdocs\management_ukm\system\CodeIgniter.php(932): App\Controllers\HomeController->showUkm('1')
+#8 D:\Dev\xampp\htdocs\management_ukm\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+#9 D:\Dev\xampp\htdocs\management_ukm\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\Dev\xampp\htdocs\management_ukm\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-07-31 12:52:54 --> Unknown column 'id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `nama_ukm`
+WHERE `id` = \'1\'
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `nama_ukm`
+WHERE `id` = \'1\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `nama_ukm`
+WHERE `id` = \'1\'
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `nama_ukm`
+WHERE `id` = :id:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(656): CodeIgniter\Model->doFirst()
+ 7 APPPATH\Controllers\HomeController.php(43): CodeIgniter\BaseModel->first()
+ 8 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\HomeController->showUkm('1')
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+10 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-31 12:54:45 --> Invalid argument supplied for foreach()
+in APPPATH\Views\Template\menu.php on line 22.
+ 1 APPPATH\Views\Template\menu.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argument supplied for foreach()', 'D:\\Dev\\xampp\\htdocs\\management_ukm\\app\\Views\\Template\\menu.php', 22, [...])
+ 2 APPPATH\Views\ukm.php(4): include('D:\\Dev\\xampp\\htdocs\\management_ukm\\app\\Views\\Template\\menu.php')
+ 3 SYSTEMPATH\View\View.php(224): include('D:\\Dev\\xampp\\htdocs\\management_ukm\\app\\Views\\ukm.php')
+ 4 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('ukm', [], true)
+ 6 APPPATH\Controllers\HomeController.php(46): view('ukm', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\HomeController->showUkm('1')
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-31 12:54:49 --> Invalid argument supplied for foreach()
+in APPPATH\Views\Template\menu.php on line 22.
+ 1 APPPATH\Views\Template\menu.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argument supplied for foreach()', 'D:\\Dev\\xampp\\htdocs\\management_ukm\\app\\Views\\Template\\menu.php', 22, [...])
+ 2 APPPATH\Views\ukm.php(4): include('D:\\Dev\\xampp\\htdocs\\management_ukm\\app\\Views\\Template\\menu.php')
+ 3 SYSTEMPATH\View\View.php(224): include('D:\\Dev\\xampp\\htdocs\\management_ukm\\app\\Views\\ukm.php')
+ 4 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('ukm', [], true)
+ 6 APPPATH\Controllers\HomeController.php(46): view('ukm', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\HomeController->showUkm('1')
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-31 12:56:18 --> Illegal string offset 'id_ukm'
+in APPPATH\Views\Template\menu.php on line 24.
+ 1 APPPATH\Views\Template\menu.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string offset \'id_ukm\'', 'D:\\Dev\\xampp\\htdocs\\management_ukm\\app\\Views\\Template\\menu.php', 24, [...])
+ 2 APPPATH\Views\ukm.php(4): include('D:\\Dev\\xampp\\htdocs\\management_ukm\\app\\Views\\Template\\menu.php')
+ 3 SYSTEMPATH\View\View.php(224): include('D:\\Dev\\xampp\\htdocs\\management_ukm\\app\\Views\\ukm.php')
+ 4 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('ukm', [], true)
+ 6 APPPATH\Controllers\HomeController.php(46): view('ukm', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\HomeController->showUkm('1')
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-31 12:58:11 --> Illegal string offset 'id_ukm'
+in APPPATH\Views\Template\menu.php on line 24.
+ 1 APPPATH\Views\Template\menu.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string offset \'id_ukm\'', 'D:\\Dev\\xampp\\htdocs\\management_ukm\\app\\Views\\Template\\menu.php', 24, [...])
+ 2 APPPATH\Views\ukm.php(4): include('D:\\Dev\\xampp\\htdocs\\management_ukm\\app\\Views\\Template\\menu.php')
+ 3 SYSTEMPATH\View\View.php(224): include('D:\\Dev\\xampp\\htdocs\\management_ukm\\app\\Views\\ukm.php')
+ 4 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('ukm', [], true)
+ 6 APPPATH\Controllers\HomeController.php(46): view('ukm', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\HomeController->showUkm('1')
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-31 13:00:40 --> Illegal string offset 'id_ukm'
+in APPPATH\Views\Template\menu.php on line 24.
+ 1 APPPATH\Views\Template\menu.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string offset \'id_ukm\'', 'D:\\Dev\\xampp\\htdocs\\management_ukm\\app\\Views\\Template\\menu.php', 24, [...])
+ 2 APPPATH\Views\ukm.php(4): include('D:\\Dev\\xampp\\htdocs\\management_ukm\\app\\Views\\Template\\menu.php')
+ 3 SYSTEMPATH\View\View.php(224): include('D:\\Dev\\xampp\\htdocs\\management_ukm\\app\\Views\\ukm.php')
+ 4 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('ukm', [], true)
+ 6 APPPATH\Controllers\HomeController.php(46): view('ukm', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\HomeController->showUkm('2')
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-31 13:01:46 --> Illegal string offset 'id_ukm'
+in APPPATH\Views\Template\menu.php on line 25.
+ 1 APPPATH\Views\Template\menu.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string offset \'id_ukm\'', 'D:\\Dev\\xampp\\htdocs\\management_ukm\\app\\Views\\Template\\menu.php', 25, [...])
+ 2 APPPATH\Views\ukm.php(4): include('D:\\Dev\\xampp\\htdocs\\management_ukm\\app\\Views\\Template\\menu.php')
+ 3 SYSTEMPATH\View\View.php(224): include('D:\\Dev\\xampp\\htdocs\\management_ukm\\app\\Views\\ukm.php')
+ 4 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('ukm', [], true)
+ 6 APPPATH\Controllers\HomeController.php(46): view('ukm', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\HomeController->showUkm('2')
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-31 13:01:51 --> Illegal string offset 'id_ukm'
+in APPPATH\Views\Template\menu.php on line 25.
+ 1 APPPATH\Views\Template\menu.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string offset \'id_ukm\'', 'D:\\Dev\\xampp\\htdocs\\management_ukm\\app\\Views\\Template\\menu.php', 25, [...])
+ 2 APPPATH\Views\ukm.php(4): include('D:\\Dev\\xampp\\htdocs\\management_ukm\\app\\Views\\Template\\menu.php')
+ 3 SYSTEMPATH\View\View.php(224): include('D:\\Dev\\xampp\\htdocs\\management_ukm\\app\\Views\\ukm.php')
+ 4 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('ukm', [], true)
+ 6 APPPATH\Controllers\HomeController.php(46): view('ukm', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\HomeController->showUkm('1')
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-31 14:07:52 --> Invalid argument supplied for foreach()
+in APPPATH\Views\Template\menu.php on line 21.
+ 1 APPPATH\Views\Template\menu.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argument supplied for foreach()', 'D:\\Dev\\xampp\\htdocs\\management_ukm\\app\\Views\\Template\\menu.php', 21, [...])
+ 2 APPPATH\Views\prestasi.php(4): include('D:\\Dev\\xampp\\htdocs\\management_ukm\\app\\Views\\Template\\menu.php')
+ 3 SYSTEMPATH\View\View.php(224): include('D:\\Dev\\xampp\\htdocs\\management_ukm\\app\\Views\\prestasi.php')
+ 4 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('prestasi', [], true)
+ 6 APPPATH\Controllers\HomeController.php(58): view('prestasi', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\HomeController->prestasi()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-31 14:10:01 --> Invalid argument supplied for foreach()
+in APPPATH\Views\Template\menu.php on line 21.
+ 1 APPPATH\Views\Template\menu.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argument supplied for foreach()', 'D:\\Dev\\xampp\\htdocs\\management_ukm\\app\\Views\\Template\\menu.php', 21, [...])
+ 2 APPPATH\Views\prestasi.php(4): include('D:\\Dev\\xampp\\htdocs\\management_ukm\\app\\Views\\Template\\menu.php')
+ 3 SYSTEMPATH\View\View.php(224): include('D:\\Dev\\xampp\\htdocs\\management_ukm\\app\\Views\\prestasi.php')
+ 4 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('prestasi', [], true)
+ 6 APPPATH\Controllers\HomeController.php(58): view('prestasi', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\HomeController->prestasi()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-31 14:25:16 --> Illegal string offset 'nama_ukm'
+in APPPATH\Views\dokumentasi.php on line 24.
+ 1 APPPATH\Views\dokumentasi.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string offset \'nama_ukm\'', 'D:\\Dev\\xampp\\htdocs\\management_ukm\\app\\Views\\dokumentasi.php', 24, [...])
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\Dev\\xampp\\htdocs\\management_ukm\\app\\Views\\dokumentasi.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('dokumentasi', [], true)
+ 5 APPPATH\Controllers\HomeController.php(73): view('dokumentasi', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\HomeController->dokumentasi()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-31 14:26:49 --> Illegal string offset 'nama_ukm'
+in APPPATH\Views\dokumentasi.php on line 24.
+ 1 APPPATH\Views\dokumentasi.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string offset \'nama_ukm\'', 'D:\\Dev\\xampp\\htdocs\\management_ukm\\app\\Views\\dokumentasi.php', 24, [...])
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\Dev\\xampp\\htdocs\\management_ukm\\app\\Views\\dokumentasi.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('dokumentasi', [], true)
+ 5 APPPATH\Controllers\HomeController.php(73): view('dokumentasi', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\HomeController->dokumentasi()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-31 14:29:21 --> Illegal string offset 'id_dokumentasi'
+in APPPATH\Views\dokumentasi.php on line 24.
+ 1 APPPATH\Views\dokumentasi.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string offset \'id_dokumentasi\'', 'D:\\Dev\\xampp\\htdocs\\management_ukm\\app\\Views\\dokumentasi.php', 24, [...])
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\Dev\\xampp\\htdocs\\management_ukm\\app\\Views\\dokumentasi.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('dokumentasi', [], true)
+ 5 APPPATH\Controllers\HomeController.php(73): view('dokumentasi', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\HomeController->dokumentasi()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-31 14:29:36 --> Illegal string offset 'id_dokumentasi'
+in APPPATH\Views\dokumentasi.php on line 24.
+ 1 APPPATH\Views\dokumentasi.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string offset \'id_dokumentasi\'', 'D:\\Dev\\xampp\\htdocs\\management_ukm\\app\\Views\\dokumentasi.php', 24, [...])
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\Dev\\xampp\\htdocs\\management_ukm\\app\\Views\\dokumentasi.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('dokumentasi', [], true)
+ 5 APPPATH\Controllers\HomeController.php(73): view('dokumentasi', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\HomeController->dokumentasi()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-31 14:30:52 --> Illegal string offset 'nama_ukm'
+in APPPATH\Views\dokumentasi.php on line 25.
+ 1 APPPATH\Views\dokumentasi.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string offset \'nama_ukm\'', 'D:\\Dev\\xampp\\htdocs\\management_ukm\\app\\Views\\dokumentasi.php', 25, [...])
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\Dev\\xampp\\htdocs\\management_ukm\\app\\Views\\dokumentasi.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('dokumentasi', [], true)
+ 5 APPPATH\Controllers\HomeController.php(73): view('dokumentasi', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\HomeController->dokumentasi()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-31 14:30:59 --> Illegal string offset 'nama_ukm'
+in APPPATH\Views\dokumentasi.php on line 25.
+ 1 APPPATH\Views\dokumentasi.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string offset \'nama_ukm\'', 'D:\\Dev\\xampp\\htdocs\\management_ukm\\app\\Views\\dokumentasi.php', 25, [...])
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\Dev\\xampp\\htdocs\\management_ukm\\app\\Views\\dokumentasi.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('dokumentasi', [], true)
+ 5 APPPATH\Controllers\HomeController.php(73): view('dokumentasi', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\HomeController->dokumentasi()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-31 14:31:31 --> Illegal string offset 'nama_ukm'
+in APPPATH\Views\dokumentasi.php on line 24.
+ 1 APPPATH\Views\dokumentasi.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string offset \'nama_ukm\'', 'D:\\Dev\\xampp\\htdocs\\management_ukm\\app\\Views\\dokumentasi.php', 24, [...])
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\Dev\\xampp\\htdocs\\management_ukm\\app\\Views\\dokumentasi.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('dokumentasi', [], true)
+ 5 APPPATH\Controllers\HomeController.php(73): view('dokumentasi', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\HomeController->dokumentasi()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-31 14:33:33 --> Illegal string offset 'nama_ukm'
+in APPPATH\Views\dokumentasi.php on line 24.
+ 1 APPPATH\Views\dokumentasi.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string offset \'nama_ukm\'', 'D:\\Dev\\xampp\\htdocs\\management_ukm\\app\\Views\\dokumentasi.php', 24, [...])
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\Dev\\xampp\\htdocs\\management_ukm\\app\\Views\\dokumentasi.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('dokumentasi', [], true)
+ 5 APPPATH\Controllers\HomeController.php(73): view('dokumentasi', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\HomeController->dokumentasi()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-31 14:35:15 --> Illegal string offset 'nama_ukm'
+in APPPATH\Views\dokumentasi.php on line 25.
+ 1 APPPATH\Views\dokumentasi.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string offset \'nama_ukm\'', 'D:\\Dev\\xampp\\htdocs\\management_ukm\\app\\Views\\dokumentasi.php', 25, [...])
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\Dev\\xampp\\htdocs\\management_ukm\\app\\Views\\dokumentasi.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('dokumentasi', [], true)
+ 5 APPPATH\Controllers\HomeController.php(73): view('dokumentasi', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\HomeController->dokumentasi()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-31 14:35:17 --> Illegal string offset 'nama_ukm'
+in APPPATH\Views\dokumentasi.php on line 25.
+ 1 APPPATH\Views\dokumentasi.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string offset \'nama_ukm\'', 'D:\\Dev\\xampp\\htdocs\\management_ukm\\app\\Views\\dokumentasi.php', 25, [...])
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\Dev\\xampp\\htdocs\\management_ukm\\app\\Views\\dokumentasi.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('dokumentasi', [], true)
+ 5 APPPATH\Controllers\HomeController.php(73): view('dokumentasi', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\HomeController->dokumentasi()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-31 14:35:21 --> Illegal string offset 'nama_ukm'
+in APPPATH\Views\dokumentasi.php on line 25.
+ 1 APPPATH\Views\dokumentasi.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string offset \'nama_ukm\'', 'D:\\Dev\\xampp\\htdocs\\management_ukm\\app\\Views\\dokumentasi.php', 25, [...])
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\Dev\\xampp\\htdocs\\management_ukm\\app\\Views\\dokumentasi.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('dokumentasi', [], true)
+ 5 APPPATH\Controllers\HomeController.php(73): view('dokumentasi', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\HomeController->dokumentasi()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

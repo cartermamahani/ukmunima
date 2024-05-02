@@ -1,0 +1,9 @@
+CRITICAL - 2024-02-06 08:08:57 --> syntax error, unexpected 'endforeach' (T_ENDFOREACH), expecting elseif (T_ELSEIF) or else (T_ELSE) or endif (T_ENDIF)
+in APPPATH\Views\kelola_pendaftaran_nnu.php on line 112.
+ 1 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('kelola_pendaftaran_nnu', [], true)
+ 3 APPPATH\Controllers\HomeController.php(1633): view('kelola_pendaftaran_nnu', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\HomeController->kelola_pendaftaran_nnu()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

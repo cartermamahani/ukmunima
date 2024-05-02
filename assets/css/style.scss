@@ -1,0 +1,148 @@
+body {
+    height: 100vh;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: hidden;
+    background: url('assets/style.scss/unima.jpg') repeat 0 0;
+
+    .divider {
+        height: .25rem;
+        align-items: center;
+        position: center;
+        width: 100%;
+        background-color: #ffffff;
+        margin: 1rem 0rem;
+    }
+
+    .navbar {
+        width: 100%;
+        margin-left: 0;
+        background-color: navy;
+        font-family: sans-serif ;
+        color: rgb(255, 255, 255);
+        
+        font-size: 12pt;
+      }
+
+    .contentCard{
+        background-color: #ffffff;
+        width: 100%;
+        margin-left: 0;
+        display: flex;
+        flex-direction: column;
+        width: 99%;
+        height: auto;
+        margin-left: 0;
+
+        .contentCard>.contentCard{
+            min-height: 80vh;
+        }
+    }
+    
+   
+    .footer{
+        background-color: #0e0d0d;
+        font-size: 10;
+        font-family: sans-serif;
+        text-align: center;
+        left: 0;
+        position: relative;
+        bottom: 0;
+        width: 100%;
+        color: #ffffff;
+        margin: 0 !important;
+
+        .fa, .fas {
+            color: #F9F7F7;
+        }
+
+        .fab, .far {
+            color: #F9F7F7;
+        }
+
+        span {
+            color: #F9F7F7; 
+        }
+    }
+
+    .offcanvas {
+        background-color: #0c0c0c;
+
+        .nav-link {
+            color: #F9F7F7;
+            margin: 0.75rem 0;
+        }
+
+        .active {
+            background-color: #1900ff;
+            color: #ffffff;
+        }
+    }
+
+    .dashboardBtn {
+        .btn {
+            width: 15rem;
+            height: 5rem;
+            font-weight: 600;
+
+           .fas {
+            margin-right: 0.5rem;
+            color: rgb(255, 255, 255);
+           }
+        }
+    }
+
+    .custom-select {
+        display: inline-block;
+        width: 100%;
+        height: calc(2.25rem + 2px);
+        padding: .375rem 1.75rem .375rem .75rem;
+        line-height: 1.5;
+        color: #495057;
+        vertical-align: middle;
+        background: #fff url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3E%3Cpath fill='%23343a40' d='M2 0L0 2h4zm0 5L0 3h4z'/%3E%3C/svg%3E") no-repeat right .75rem center;
+        background-size: 8px 10px;
+        border: 1px solid #ced4da;
+        border-radius: .25rem;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+    }
+}
+
+// .homeBg {
+//     background: url('./unima.jpg') repeat 0 0;
+//     background-size: cover;
+// }
+
+.animasi-ketik {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 30px;
+    color: navy;
+    width: 100%;
+    white-space:nowrap;
+    overflow: hidden;
+    -webkit-animation: typing 5s steps(70, end);
+    animation: animasi-ketik 5s steps(70, end);
+}
+
+@keyframes animasi-ketik{
+    from{width:0;}
+}
+@-webkit-keyframes animasi-ketik {
+    from{width:0;}
+}
+
+.berita {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-style: normal;
+    color: #ffffff;
+}
+
+.fontbold {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: navy;
+    }

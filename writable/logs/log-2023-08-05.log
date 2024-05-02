@@ -1,0 +1,306 @@
+CRITICAL - 2023-08-05 05:33:50 --> The route for "http://localhost/management_ukm/public/dashboard" cannot be found.
+in SYSTEMPATH\HTTP\RedirectResponse.php on line 60.
+ 1 SYSTEMPATH\HTTP\RedirectResponse.php(60): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('http://localhost/management_ukm/public/dashboard')
+ 2 APPPATH\Controllers\HomeController.php(56): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\HomeController->login()
+ 4 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+ 5 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-05 05:34:30 --> The route for "http://localhost/management_ukm/public/dashboard" cannot be found.
+in SYSTEMPATH\HTTP\RedirectResponse.php on line 60.
+ 1 SYSTEMPATH\HTTP\RedirectResponse.php(60): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('http://localhost/management_ukm/public/dashboard')
+ 2 APPPATH\Controllers\HomeController.php(56): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\HomeController->login()
+ 4 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+ 5 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-05 05:55:17 --> Call to undefined function link_tag()
+in APPPATH\Views\Template\header.php on line 7.
+ 1 APPPATH\Views\home.php(3): include()
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\Dev\\xampp\\htdocs\\management_ukm\\app\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\HomeController.php(22): view('home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\HomeController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-05 05:55:26 --> Call to undefined function link_tag()
+in APPPATH\Views\Template\header.php on line 7.
+ 1 APPPATH\Views\home.php(3): include()
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\Dev\\xampp\\htdocs\\management_ukm\\app\\Views\\home.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('home', [], true)
+ 5 APPPATH\Controllers\HomeController.php(22): view('home', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\HomeController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-08-05 07:45:06 --> mysqli_sql_exception: Unknown column 'id_ukm' in 'where clause' in D:\Dev\xampp\htdocs\management_ukm\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\Dev\xampp\htdocs\management_ukm\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\Dev\xampp\htdocs\management_ukm\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\Dev\xampp\htdocs\management_ukm\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\Dev\xampp\htdocs\management_ukm\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\Dev\xampp\htdocs\management_ukm\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\Dev\xampp\htdocs\management_ukm\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\Dev\xampp\htdocs\management_ukm\app\Controllers\HomeController.php(218): CodeIgniter\BaseModel->findAll()
+#7 D:\Dev\xampp\htdocs\management_ukm\system\CodeIgniter.php(932): App\Controllers\HomeController->kelola_prestasi('Array')
+#8 D:\Dev\xampp\htdocs\management_ukm\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+#9 D:\Dev\xampp\htdocs\management_ukm\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\Dev\xampp\htdocs\management_ukm\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-08-05 07:45:06 --> Unknown column 'id_ukm' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `prestasi_ukm`
+WHERE `id_ukm` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `prestasi_ukm`
+WHERE `id_ukm` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `prestasi_ukm`
+WHERE `id_ukm` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `prestasi_ukm`
+WHERE `id_ukm` IS NULL', [], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\HomeController.php(218): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\HomeController->kelola_prestasi('Array')
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+10 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-08-05 07:47:37 --> mysqli_sql_exception: Unknown column 'id_ukm' in 'where clause' in D:\Dev\xampp\htdocs\management_ukm\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\Dev\xampp\htdocs\management_ukm\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\Dev\xampp\htdocs\management_ukm\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\Dev\xampp\htdocs\management_ukm\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\Dev\xampp\htdocs\management_ukm\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\Dev\xampp\htdocs\management_ukm\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\Dev\xampp\htdocs\management_ukm\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\Dev\xampp\htdocs\management_ukm\app\Controllers\HomeController.php(218): CodeIgniter\BaseModel->findAll()
+#7 D:\Dev\xampp\htdocs\management_ukm\system\CodeIgniter.php(932): App\Controllers\HomeController->kelola_prestasi('Array')
+#8 D:\Dev\xampp\htdocs\management_ukm\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+#9 D:\Dev\xampp\htdocs\management_ukm\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\Dev\xampp\htdocs\management_ukm\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-08-05 07:47:37 --> Unknown column 'id_ukm' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `prestasi_ukm`
+WHERE `id_ukm` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `prestasi_ukm`
+WHERE `id_ukm` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `prestasi_ukm`
+WHERE `id_ukm` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `prestasi_ukm`
+WHERE `id_ukm` IS NULL', [], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\HomeController.php(218): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\HomeController->kelola_prestasi('Array')
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+10 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-08-05 07:48:39 --> mysqli_sql_exception: Unknown column 'id_ukm' in 'where clause' in D:\Dev\xampp\htdocs\management_ukm\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\Dev\xampp\htdocs\management_ukm\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\Dev\xampp\htdocs\management_ukm\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\Dev\xampp\htdocs\management_ukm\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\Dev\xampp\htdocs\management_ukm\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\Dev\xampp\htdocs\management_ukm\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\Dev\xampp\htdocs\management_ukm\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\Dev\xampp\htdocs\management_ukm\app\Controllers\HomeController.php(219): CodeIgniter\BaseModel->findAll()
+#7 D:\Dev\xampp\htdocs\management_ukm\system\CodeIgniter.php(932): App\Controllers\HomeController->kelola_prestasi('Array')
+#8 D:\Dev\xampp\htdocs\management_ukm\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+#9 D:\Dev\xampp\htdocs\management_ukm\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\Dev\xampp\htdocs\management_ukm\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-08-05 07:48:39 --> Unknown column 'id_ukm' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `prestasi_ukm`
+WHERE `id_ukm` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `prestasi_ukm`
+WHERE `id_ukm` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `prestasi_ukm`
+WHERE `id_ukm` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `prestasi_ukm`
+WHERE `id_ukm` IS NULL', [], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\HomeController.php(219): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\HomeController->kelola_prestasi('Array')
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+10 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-08-05 07:51:32 --> mysqli_sql_exception: Unknown column 'id_ukm' in 'where clause' in D:\Dev\xampp\htdocs\management_ukm\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\Dev\xampp\htdocs\management_ukm\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\Dev\xampp\htdocs\management_ukm\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\Dev\xampp\htdocs\management_ukm\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\Dev\xampp\htdocs\management_ukm\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\Dev\xampp\htdocs\management_ukm\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\Dev\xampp\htdocs\management_ukm\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\Dev\xampp\htdocs\management_ukm\app\Controllers\HomeController.php(219): CodeIgniter\BaseModel->findAll()
+#7 D:\Dev\xampp\htdocs\management_ukm\system\CodeIgniter.php(932): App\Controllers\HomeController->kelola_prestasi('1')
+#8 D:\Dev\xampp\htdocs\management_ukm\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+#9 D:\Dev\xampp\htdocs\management_ukm\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\Dev\xampp\htdocs\management_ukm\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-08-05 07:51:32 --> Unknown column 'id_ukm' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `prestasi_ukm`
+WHERE `id_ukm` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `prestasi_ukm`
+WHERE `id_ukm` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `prestasi_ukm`
+WHERE `id_ukm` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `prestasi_ukm`
+WHERE `id_ukm` IS NULL', [], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\HomeController.php(219): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\HomeController->kelola_prestasi('1')
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+10 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-08-05 07:53:31 --> mysqli_sql_exception: Unknown column 'id_ukm' in 'where clause' in D:\Dev\xampp\htdocs\management_ukm\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\Dev\xampp\htdocs\management_ukm\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\Dev\xampp\htdocs\management_ukm\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\Dev\xampp\htdocs\management_ukm\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\Dev\xampp\htdocs\management_ukm\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\Dev\xampp\htdocs\management_ukm\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\Dev\xampp\htdocs\management_ukm\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\Dev\xampp\htdocs\management_ukm\app\Controllers\HomeController.php(219): CodeIgniter\BaseModel->findAll()
+#7 D:\Dev\xampp\htdocs\management_ukm\system\CodeIgniter.php(932): App\Controllers\HomeController->kelola_prestasi('1')
+#8 D:\Dev\xampp\htdocs\management_ukm\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+#9 D:\Dev\xampp\htdocs\management_ukm\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\Dev\xampp\htdocs\management_ukm\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-08-05 07:53:31 --> Unknown column 'id_ukm' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `prestasi_ukm`
+WHERE `id_ukm` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `prestasi_ukm`
+WHERE `id_ukm` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `prestasi_ukm`
+WHERE `id_ukm` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `prestasi_ukm`
+WHERE `id_ukm` IS NULL', [], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\HomeController.php(219): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\HomeController->kelola_prestasi('1')
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+10 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-05 10:16:34 --> Invalid argument supplied for foreach()
+in APPPATH\Views\kelola_prestasi.php on line 61.
+ 1 APPPATH\Views\kelola_prestasi.php(61): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argument supplied for foreach()', 'D:\\Dev\\xampp\\htdocs\\management_ukm\\app\\Views\\kelola_prestasi.php', 61, [...])
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\Dev\\xampp\\htdocs\\management_ukm\\app\\Views\\kelola_prestasi.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('kelola_prestasi', [], true)
+ 5 APPPATH\Controllers\HomeController.php(223): view('kelola_prestasi', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\HomeController->kelola_prestasi('1')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-05 10:17:04 --> Invalid argument supplied for foreach()
+in APPPATH\Views\kelola_prestasi.php on line 95.
+ 1 APPPATH\Views\kelola_prestasi.php(95): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argument supplied for foreach()', 'D:\\Dev\\xampp\\htdocs\\management_ukm\\app\\Views\\kelola_prestasi.php', 95, [...])
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\Dev\\xampp\\htdocs\\management_ukm\\app\\Views\\kelola_prestasi.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('kelola_prestasi', [], true)
+ 5 APPPATH\Controllers\HomeController.php(223): view('kelola_prestasi', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\HomeController->kelola_prestasi('1')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-05 10:42:33 --> Deletes are not allowed unless they contain a "where" or "like" clause.
+in SYSTEMPATH\Database\BaseBuilder.php on line 2767.
+ 1 SYSTEMPATH\Model.php(456): CodeIgniter\Database\BaseBuilder->delete()
+ 2 SYSTEMPATH\BaseModel.php(1065): CodeIgniter\Model->doDelete(null, false)
+ 3 APPPATH\Controllers\HomeController.php(251): CodeIgniter\BaseModel->delete(null)
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\HomeController->delete_prestasi()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-05 10:45:21 --> Deletes are not allowed unless they contain a "where" or "like" clause.
+in SYSTEMPATH\Database\BaseBuilder.php on line 2767.
+ 1 SYSTEMPATH\Model.php(456): CodeIgniter\Database\BaseBuilder->delete()
+ 2 SYSTEMPATH\BaseModel.php(1065): CodeIgniter\Model->doDelete(null, false)
+ 3 APPPATH\Controllers\HomeController.php(251): CodeIgniter\BaseModel->delete(null)
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\HomeController->delete_prestasi()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-05 10:46:57 --> Deletes are not allowed unless they contain a "where" or "like" clause.
+in SYSTEMPATH\Database\BaseBuilder.php on line 2767.
+ 1 SYSTEMPATH\Model.php(456): CodeIgniter\Database\BaseBuilder->delete()
+ 2 SYSTEMPATH\BaseModel.php(1065): CodeIgniter\Model->doDelete(null, false)
+ 3 APPPATH\Controllers\HomeController.php(251): CodeIgniter\BaseModel->delete(null)
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\HomeController->delete_prestasi()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-05 11:14:43 --> Object of class CodeIgniter\Session\Session could not be converted to string
+in SYSTEMPATH\Database\Query.php on line 335.
+ 1 SYSTEMPATH\Database\Query.php(335): strtr('INSERT INTO `prestasi_ukm` (`nama_prestasi`, `tanggal_prestasi`, `nama_ukm`) VALUES (:nama_prestasi:, :tanggal_prestasi:, :nama_ukm:)', [...])
+ 2 SYSTEMPATH\Database\Query.php(310): CodeIgniter\Database\Query->matchNamedBinds('INSERT INTO `prestasi_ukm` (`nama_prestasi`, `tanggal_prestasi`, `nama_ukm`) VALUES (:nama_prestasi:, :tanggal_prestasi:, :nama_ukm:)', [...])
+ 3 SYSTEMPATH\Database\Query.php(159): CodeIgniter\Database\Query->compileBinds()
+ 4 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\Query->getQuery()
+ 5 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `prestasi_ukm` (`nama_prestasi`, `tanggal_prestasi`, `nama_ukm`) VALUES (:nama_prestasi:, :tanggal_prestasi:, :nama_ukm:)', [...], false)
+ 6 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 7 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 8 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 9 APPPATH\Controllers\HomeController.php(268): CodeIgniter\Model->insert([...])
+10 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\HomeController->add_prestasi()
+11 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+12 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-08-05 11:18:28 --> mysqli_sql_exception: Column 'nama_ukm' cannot be null in D:\Dev\xampp\htdocs\management_ukm\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\Dev\xampp\htdocs\management_ukm\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `pr...', 0)
+#1 D:\Dev\xampp\htdocs\management_ukm\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 D:\Dev\xampp\htdocs\management_ukm\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 D:\Dev\xampp\htdocs\management_ukm\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', Array, false)
+#4 D:\Dev\xampp\htdocs\management_ukm\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\Dev\xampp\htdocs\management_ukm\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 D:\Dev\xampp\htdocs\management_ukm\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 D:\Dev\xampp\htdocs\management_ukm\app\Controllers\HomeController.php(268): CodeIgniter\Model->insert(Array)
+#8 D:\Dev\xampp\htdocs\management_ukm\system\CodeIgniter.php(932): App\Controllers\HomeController->add_prestasi()
+#9 D:\Dev\xampp\htdocs\management_ukm\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+#10 D:\Dev\xampp\htdocs\management_ukm\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\Dev\xampp\htdocs\management_ukm\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-08-05 11:18:28 --> Column 'nama_ukm' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `prestasi_ukm` (`nama_prestasi`, `tanggal_prestasi`, `nama_ukm`) VALUES (\'Prestasi New\', \'2023-08-19\', NULL)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `prestasi_ukm` (`nama_prestasi`, `tanggal_prestasi`, `nama_ukm`) VALUES (\'Prestasi New\', \'2023-08-19\', NULL)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `prestasi_ukm` (`nama_prestasi`, `tanggal_prestasi`, `nama_ukm`) VALUES (\'Prestasi New\', \'2023-08-19\', NULL)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `prestasi_ukm` (`nama_prestasi`, `tanggal_prestasi`, `nama_ukm`) VALUES (:nama_prestasi:, :tanggal_prestasi:, :nama_ukm:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\HomeController.php(268): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\HomeController->add_prestasi()
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+11 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

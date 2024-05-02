@@ -1,0 +1,133 @@
+ERROR - 2023-10-07 02:32:01 --> mysqli_sql_exception: Column 'mahasiswa_aktif' cannot be null in D:\Dev\xampp\htdocs\management_ukm\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\Dev\xampp\htdocs\management_ukm\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `ca...', 0)
+#1 D:\Dev\xampp\htdocs\management_ukm\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ca...')
+#2 D:\Dev\xampp\htdocs\management_ukm\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ca...')
+#3 D:\Dev\xampp\htdocs\management_ukm\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ca...', Array, false)
+#4 D:\Dev\xampp\htdocs\management_ukm\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\Dev\xampp\htdocs\management_ukm\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 D:\Dev\xampp\htdocs\management_ukm\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 D:\Dev\xampp\htdocs\management_ukm\app\Controllers\HomeController.php(1528): CodeIgniter\Model->insert(Array)
+#8 D:\Dev\xampp\htdocs\management_ukm\system\CodeIgniter.php(932): App\Controllers\HomeController->daftar_nnu()
+#9 D:\Dev\xampp\htdocs\management_ukm\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+#10 D:\Dev\xampp\htdocs\management_ukm\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\Dev\xampp\htdocs\management_ukm\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-10-07 02:32:01 --> Column 'mahasiswa_aktif' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `calon_pengurus_nnu` (`email`, `nama`, `mahasiswa_aktif`, `semester`, `pribadi`, `wawasan`, `penampilan`, `bahasa_asing`, `belum_menikah`, `jenis_kelamin`, `tinggi`, `skor`) VALUES (\'rabbitschan@gmail.com\', \'Aliya\', NULL, \'4\', 1, 1, NULL, \'Bahasa Inggris, Bahasa Jepang\', 1, \'Perempuan\', \'150\', 0.8)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `calon_pengurus_nnu` (`email`, `nama`, `mahasiswa_aktif`, `semester`, `pribadi`, `wawasan`, `penampilan`, `bahasa_asing`, `belum_menikah`, `jenis_kelamin`, `tinggi`, `skor`) VALUES (\'rabbitschan@gmail.com\', \'Aliya\', NULL, \'4\', 1, 1, NULL, \'Bahasa Inggris, Bahasa Jepang\', 1, \'Perempuan\', \'150\', 0.8)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `calon_pengurus_nnu` (`email`, `nama`, `mahasiswa_aktif`, `semester`, `pribadi`, `wawasan`, `penampilan`, `bahasa_asing`, `belum_menikah`, `jenis_kelamin`, `tinggi`, `skor`) VALUES (\'rabbitschan@gmail.com\', \'Aliya\', NULL, \'4\', 1, 1, NULL, \'Bahasa Inggris, Bahasa Jepang\', 1, \'Perempuan\', \'150\', 0.8)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `calon_pengurus_nnu` (`email`, `nama`, `mahasiswa_aktif`, `semester`, `pribadi`, `wawasan`, `penampilan`, `bahasa_asing`, `belum_menikah`, `jenis_kelamin`, `tinggi`, `skor`) VALUES (:email:, :nama:, :mahasiswa_aktif:, :semester:, :pribadi:, :wawasan:, :penampilan:, :bahasa_asing:, :belum_menikah:, :jenis_kelamin:, :tinggi:, :skor:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\HomeController.php(1528): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\HomeController->daftar_nnu()
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+11 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-07 02:37:48 --> Class 'PHPMailer\PHPMailer\PHPMailer' not found
+in APPPATH\Controllers\HomeController.php on line 1435.
+ 1 APPPATH\Controllers\HomeController.php(1582): App\Controllers\HomeController->sendmail('rabbitschan@gmail.com', 'Aliya', 'Pendaftaran Pengurus Biro Pelayanan Mahasiswa Kristen (BPMK)', '<h3>Halo,Aliya</h3> <p>Selamat! Pendaftaran Anda Sebagai Pengurus NNU Telah Diterima.</p><p>Untuk informasi langkah selanjutnya, mohon untuk terus pantau media sosial BPMK atau hubungi pengurus BPMK.</p>')
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\HomeController->terima_nnu()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-07 03:33:33 --> Call to a member function library() on null
+in APPPATH\Controllers\HomeController.php on line 1439.
+ 1 APPPATH\Controllers\HomeController.php(1584): App\Controllers\HomeController->sendmail('rabbitschan@gmail.com', 'Aliya', 'Pendaftaran Pengurus Biro Pelayanan Mahasiswa Kristen (BPMK)', '<h3>Halo,Aliya</h3> <p>Selamat! Pendaftaran Anda Sebagai Pengurus NNU Telah Diterima.</p><p>Untuk informasi langkah selanjutnya, mohon untuk terus pantau media sosial BPMK atau hubungi pengurus BPMK.</p>')
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\HomeController->terima_nnu()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-07 03:37:10 --> Call to undefined function App\Controllers\setMessage()
+in APPPATH\Controllers\HomeController.php on line 1445.
+ 1 APPPATH\Controllers\HomeController.php(1584): App\Controllers\HomeController->sendmail('rabbitschan@gmail.com', 'Aliya', 'Pendaftaran Pengurus Biro Pelayanan Mahasiswa Kristen (BPMK)', '<h3>Halo,Aliya</h3> <p>Selamat! Pendaftaran Anda Sebagai Pengurus NNU Telah Diterima.</p><p>Untuk informasi langkah selanjutnya, mohon untuk terus pantau media sosial BPMK atau hubungi pengurus BPMK.</p>')
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\HomeController->terima_nnu()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-07 03:38:15 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-10-07 03:38:15 --> 220 smtp.gmail.com ESMTP z23-20020a63ac57000000b0057412d84d25sm3951162pgn.4 - gsmtp
+
+hello: 250-smtp.gmail.com at your service, [2001:448a:708b:1be4:a194:382b:e332:3da1]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 535-5.7.8 Username and Password not accepted. Learn more at
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials z23-20020a63ac57000000b0057412d84d25sm3951162pgn.4 - gsmtp
+
+ERROR - 2023-10-07 05:17:04 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): SSL operation failed with code 1. OpenSSL Error messages:
+error:1408F10B:SSL routines:ssl3_get_record:wrong version number in D:\Dev\xampp\htdocs\management_ukm\system\Email\Email.php:1868
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fsockopen(): SS...', 'D:\\Dev\\xampp\\ht...', 1868, Array)
+#1 D:\Dev\xampp\htdocs\management_ukm\system\Email\Email.php(1868): fsockopen('ssl://smtp.gmai...', 587, 0, NULL, 20)
+#2 D:\Dev\xampp\htdocs\management_ukm\system\Email\Email.php(1782): CodeIgniter\Email\Email->SMTPConnect()
+#3 D:\Dev\xampp\htdocs\management_ukm\system\Email\Email.php(1667): CodeIgniter\Email\Email->sendWithSmtp()
+#4 D:\Dev\xampp\htdocs\management_ukm\system\Email\Email.php(1565): CodeIgniter\Email\Email->spoolEmail()
+#5 D:\Dev\xampp\htdocs\management_ukm\app\Controllers\HomeController.php(1447): CodeIgniter\Email\Email->send()
+#6 D:\Dev\xampp\htdocs\management_ukm\app\Controllers\HomeController.php(1584): App\Controllers\HomeController->sendmail('rabbitschan@gma...', 'Aliya', 'Pendaftaran Pen...', '<h3>Halo,Aliya<...')
+#7 D:\Dev\xampp\htdocs\management_ukm\system\CodeIgniter.php(932): App\Controllers\HomeController->terima_nnu()
+#8 D:\Dev\xampp\htdocs\management_ukm\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+#9 D:\Dev\xampp\htdocs\management_ukm\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\Dev\xampp\htdocs\management_ukm\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2023-10-07 05:17:04 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-10-07 05:17:04 --> 
+ERROR - 2023-10-07 05:33:04 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): SSL operation failed with code 1. OpenSSL Error messages:
+error:1408F10B:SSL routines:ssl3_get_record:wrong version number in D:\Dev\xampp\htdocs\management_ukm\system\Email\Email.php:1868
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fsockopen(): SS...', 'D:\\Dev\\xampp\\ht...', 1868, Array)
+#1 D:\Dev\xampp\htdocs\management_ukm\system\Email\Email.php(1868): fsockopen('ssl://smtp.gmai...', 587, 0, NULL, 20)
+#2 D:\Dev\xampp\htdocs\management_ukm\system\Email\Email.php(1782): CodeIgniter\Email\Email->SMTPConnect()
+#3 D:\Dev\xampp\htdocs\management_ukm\system\Email\Email.php(1667): CodeIgniter\Email\Email->sendWithSmtp()
+#4 D:\Dev\xampp\htdocs\management_ukm\system\Email\Email.php(1565): CodeIgniter\Email\Email->spoolEmail()
+#5 D:\Dev\xampp\htdocs\management_ukm\app\Controllers\HomeController.php(1447): CodeIgniter\Email\Email->send()
+#6 D:\Dev\xampp\htdocs\management_ukm\app\Controllers\HomeController.php(1587): App\Controllers\HomeController->sendmail('rabbitschan@gma...', 'Aliya', 'Pendaftaran Pen...', '<h3>Halo,Aliya<...')
+#7 D:\Dev\xampp\htdocs\management_ukm\system\CodeIgniter.php(932): App\Controllers\HomeController->terima_nnu()
+#8 D:\Dev\xampp\htdocs\management_ukm\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+#9 D:\Dev\xampp\htdocs\management_ukm\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\Dev\xampp\htdocs\management_ukm\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2023-10-07 05:33:04 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-10-07 05:33:04 --> 
+ERROR - 2023-10-07 05:38:46 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): SSL operation failed with code 1. OpenSSL Error messages:
+error:1408F10B:SSL routines:ssl3_get_record:wrong version number in D:\Dev\xampp\htdocs\management_ukm\system\Email\Email.php:1868
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fsockopen(): SS...', 'D:\\Dev\\xampp\\ht...', 1868, Array)
+#1 D:\Dev\xampp\htdocs\management_ukm\system\Email\Email.php(1868): fsockopen('ssl://smtp.gmai...', 587, 0, NULL, 20)
+#2 D:\Dev\xampp\htdocs\management_ukm\system\Email\Email.php(1782): CodeIgniter\Email\Email->SMTPConnect()
+#3 D:\Dev\xampp\htdocs\management_ukm\system\Email\Email.php(1667): CodeIgniter\Email\Email->sendWithSmtp()
+#4 D:\Dev\xampp\htdocs\management_ukm\system\Email\Email.php(1565): CodeIgniter\Email\Email->spoolEmail()
+#5 D:\Dev\xampp\htdocs\management_ukm\app\Controllers\HomeController.php(1447): CodeIgniter\Email\Email->send()
+#6 D:\Dev\xampp\htdocs\management_ukm\app\Controllers\HomeController.php(1587): App\Controllers\HomeController->sendmail('rabbitschan@gma...', 'Aliya', 'Pendaftaran Pen...', '<h3>Halo,Aliya<...')
+#7 D:\Dev\xampp\htdocs\management_ukm\system\CodeIgniter.php(932): App\Controllers\HomeController->terima_nnu()
+#8 D:\Dev\xampp\htdocs\management_ukm\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+#9 D:\Dev\xampp\htdocs\management_ukm\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\Dev\xampp\htdocs\management_ukm\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2023-10-07 05:38:46 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-10-07 05:38:46 --> 
+ERROR - 2023-10-07 05:43:20 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): SSL operation failed with code 1. OpenSSL Error messages:
+error:1408F10B:SSL routines:ssl3_get_record:wrong version number in D:\Dev\xampp\htdocs\management_ukm\system\Email\Email.php:1868
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fsockopen(): SS...', 'D:\\Dev\\xampp\\ht...', 1868, Array)
+#1 D:\Dev\xampp\htdocs\management_ukm\system\Email\Email.php(1868): fsockopen('ssl://smtp.goog...', 587, 0, NULL, 20)
+#2 D:\Dev\xampp\htdocs\management_ukm\system\Email\Email.php(1782): CodeIgniter\Email\Email->SMTPConnect()
+#3 D:\Dev\xampp\htdocs\management_ukm\system\Email\Email.php(1667): CodeIgniter\Email\Email->sendWithSmtp()
+#4 D:\Dev\xampp\htdocs\management_ukm\system\Email\Email.php(1565): CodeIgniter\Email\Email->spoolEmail()
+#5 D:\Dev\xampp\htdocs\management_ukm\app\Controllers\HomeController.php(1447): CodeIgniter\Email\Email->send()
+#6 D:\Dev\xampp\htdocs\management_ukm\app\Controllers\HomeController.php(1587): App\Controllers\HomeController->sendmail('rabbitschan@gma...', 'Aliya', 'Pendaftaran Pen...', '<h3>Halo,Aliya<...')
+#7 D:\Dev\xampp\htdocs\management_ukm\system\CodeIgniter.php(932): App\Controllers\HomeController->terima_nnu()
+#8 D:\Dev\xampp\htdocs\management_ukm\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+#9 D:\Dev\xampp\htdocs\management_ukm\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\Dev\xampp\htdocs\management_ukm\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2023-10-07 05:43:20 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-10-07 05:43:20 --> 

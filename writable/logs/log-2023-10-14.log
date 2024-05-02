@@ -1,0 +1,97 @@
+CRITICAL - 2023-10-14 08:36:57 --> The original file is not a valid file.
+in SYSTEMPATH\HTTP\Files\UploadedFile.php on line 137.
+ 1 SYSTEMPATH\HTTP\Files\UploadedFile.php(137): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+ 2 APPPATH\Controllers\HomeController.php(445): CodeIgniter\HTTP\Files\UploadedFile->move('C:\\xampp\\htdocs\\management_ukm\\assets/doc/', '_1.')
+ 3 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\HomeController->add_lpj()
+ 4 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+ 5 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-14 08:39:12 --> The original file is not a valid file.
+in SYSTEMPATH\HTTP\Files\UploadedFile.php on line 137.
+ 1 SYSTEMPATH\HTTP\Files\UploadedFile.php(137): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+ 2 APPPATH\Controllers\HomeController.php(623): CodeIgniter\HTTP\Files\UploadedFile->move('C:\\xampp\\htdocs\\management_ukm\\assets/doc/', '_1.')
+ 3 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\HomeController->add_progja()
+ 4 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+ 5 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-14 14:55:47 --> syntax error, unexpected '?'
+in APPPATH\Views\kelola_pendaftaran_bpmk.php on line 84.
+ 1 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('kelola_pendaftaran_bpmk', [], true)
+ 3 APPPATH\Controllers\HomeController.php(1443): view('kelola_pendaftaran_bpmk', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\HomeController->kelola_pendaftaran_bpmk()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-14 14:56:52 --> syntax error, unexpected '?'
+in APPPATH\Views\kelola_pendaftaran_bpmk.php on line 72.
+ 1 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('kelola_pendaftaran_bpmk', [], true)
+ 3 APPPATH\Controllers\HomeController.php(1443): view('kelola_pendaftaran_bpmk', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\HomeController->kelola_pendaftaran_bpmk()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-14 15:00:33 --> syntax error, unexpected '?'
+in APPPATH\Views\kelola_pendaftaran_bpmk.php on line 76.
+ 1 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('kelola_pendaftaran_bpmk', [], true)
+ 3 APPPATH\Controllers\HomeController.php(1443): view('kelola_pendaftaran_bpmk', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\HomeController->kelola_pendaftaran_bpmk()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-14 15:01:15 --> syntax error, unexpected '?'
+in APPPATH\Views\kelola_pendaftaran_bpmk.php on line 71.
+ 1 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('kelola_pendaftaran_bpmk', [], true)
+ 3 APPPATH\Controllers\HomeController.php(1443): view('kelola_pendaftaran_bpmk', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\HomeController->kelola_pendaftaran_bpmk()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-14 15:03:22 --> syntax error, unexpected 'if' (T_IF)
+in APPPATH\Views\kelola_pendaftaran_bpmk.php on line 71.
+ 1 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('kelola_pendaftaran_bpmk', [], true)
+ 3 APPPATH\Controllers\HomeController.php(1443): view('kelola_pendaftaran_bpmk', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\HomeController->kelola_pendaftaran_bpmk()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-14 15:06:51 --> syntax error, unexpected '$row' (T_VARIABLE), expecting ')'
+in APPPATH\Views\kelola_pendaftaran_bpmk.php on line 76.
+ 1 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('kelola_pendaftaran_bpmk', [], true)
+ 3 APPPATH\Controllers\HomeController.php(1443): view('kelola_pendaftaran_bpmk', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\HomeController->kelola_pendaftaran_bpmk()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-14 15:08:32 --> syntax error, unexpected '$row' (T_VARIABLE), expecting ')'
+in APPPATH\Views\kelola_pendaftaran_bpmk.php on line 76.
+ 1 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('kelola_pendaftaran_bpmk', [], true)
+ 3 APPPATH\Controllers\HomeController.php(1443): view('kelola_pendaftaran_bpmk', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\HomeController->kelola_pendaftaran_bpmk()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-14 15:09:24 --> syntax error, unexpected '$sbmFilePath' (T_VARIABLE)
+in APPPATH\Views\kelola_pendaftaran_bpmk.php on line 69.
+ 1 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('kelola_pendaftaran_bpmk', [], true)
+ 3 APPPATH\Controllers\HomeController.php(1443): view('kelola_pendaftaran_bpmk', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\HomeController->kelola_pendaftaran_bpmk()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-14 15:11:14 --> syntax error, unexpected '_blank' (T_STRING), expecting ';' or ','
+in APPPATH\Views\kelola_pendaftaran_bpmk.php on line 76.
+ 1 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('kelola_pendaftaran_bpmk', [], true)
+ 3 APPPATH\Controllers\HomeController.php(1443): view('kelola_pendaftaran_bpmk', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\HomeController->kelola_pendaftaran_bpmk()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

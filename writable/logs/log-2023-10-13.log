@@ -1,0 +1,66 @@
+ERROR - 2023-10-13 03:14:44 --> mysqli_sql_exception: Unknown column 'visi' in 'field list' in C:\xampp\htdocs\management_ukm\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\management_ukm\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `nama_uk...', 0)
+#1 C:\xampp\htdocs\management_ukm\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `nama_uk...')
+#2 C:\xampp\htdocs\management_ukm\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `nama_uk...')
+#3 C:\xampp\htdocs\management_ukm\system\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `nama_uk...', Array, false)
+#4 C:\xampp\htdocs\management_ukm\system\Model.php(396): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\xampp\htdocs\management_ukm\system\BaseModel.php(943): CodeIgniter\Model->doUpdate(Array, Array)
+#6 C:\xampp\htdocs\management_ukm\system\Model.php(756): CodeIgniter\BaseModel->update(Array, Array)
+#7 C:\xampp\htdocs\management_ukm\app\Controllers\HomeController.php(1037): CodeIgniter\Model->update('1', Array)
+#8 C:\xampp\htdocs\management_ukm\system\CodeIgniter.php(932): App\Controllers\HomeController->update_ukm()
+#9 C:\xampp\htdocs\management_ukm\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+#10 C:\xampp\htdocs\management_ukm\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\management_ukm\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-10-13 03:14:45 --> Unknown column 'visi' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `nama_ukm` SET `nama_ukm` = \'Biro Pelayanan Mahasiswa Kristen (BPMK)\', `keterangan_ukm` = \'Yesus Kristus sebagai Kepala Pelayanan dan Alkitab sebagai sumber Pengajaran Mutlak\', `visi` = \'Menghasilkan sarjana yang mampu menjadi garam dan terang serta memiliki jiwa missioner di tengah Keluarga, Gereja, dan Masyarakat serta Bangsa dan Negara\', `misi` = \'Menghadirkan mahasiswa yang dapat membawa transformasi bagi kampus UNIMA dan mampu membangun gerakan rohani dimana-mana\', `email` = \'bmpk@unima.ac.id\', `nomor_hp` = \'089603448998\'
+WHERE `nama_ukm`.`id_ukm` IN (\'1\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `nama_ukm` SET `nama_ukm` = \'Biro Pelayanan Mahasiswa Kristen (BPMK)\', `keterangan_ukm` = \'Yesus Kristus sebagai Kepala Pelayanan dan Alkitab sebagai sumber Pengajaran Mutlak\', `visi` = \'Menghasilkan sarjana yang mampu menjadi garam dan terang serta memiliki jiwa missioner di tengah Keluarga, Gereja, dan Masyarakat serta Bangsa dan Negara\', `misi` = \'Menghadirkan mahasiswa yang dapat membawa transformasi bagi kampus UNIMA dan mampu membangun gerakan rohani dimana-mana\', `email` = \'bmpk@unima.ac.id\', `nomor_hp` = \'089603448998\'
+WHERE `nama_ukm`.`id_ukm` IN (\'1\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `nama_ukm` SET `nama_ukm` = \'Biro Pelayanan Mahasiswa Kristen (BPMK)\', `keterangan_ukm` = \'Yesus Kristus sebagai Kepala Pelayanan dan Alkitab sebagai sumber Pengajaran Mutlak\', `visi` = \'Menghasilkan sarjana yang mampu menjadi garam dan terang serta memiliki jiwa missioner di tengah Keluarga, Gereja, dan Masyarakat serta Bangsa dan Negara\', `misi` = \'Menghadirkan mahasiswa yang dapat membawa transformasi bagi kampus UNIMA dan mampu membangun gerakan rohani dimana-mana\', `email` = \'bmpk@unima.ac.id\', `nomor_hp` = \'089603448998\'
+WHERE `nama_ukm`.`id_ukm` IN (\'1\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `nama_ukm` SET `nama_ukm` = :nama_ukm:, `keterangan_ukm` = :keterangan_ukm:, `visi` = :visi:, `misi` = :misi:, `email` = :email:, `nomor_hp` = :nomor_hp:
+WHERE `nama_ukm`.`id_ukm` IN :nama_ukm.id_ukm:', [...], false)
+ 5 SYSTEMPATH\Model.php(396): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH\BaseModel.php(943): CodeIgniter\Model->doUpdate([...], [...])
+ 7 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update([...], [...])
+ 8 APPPATH\Controllers\HomeController.php(1037): CodeIgniter\Model->update('1', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\HomeController->update_ukm()
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+11 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-13 03:31:43 --> mysqli_sql_exception: Unknown column 'visi' in 'field list' in C:\xampp\htdocs\management_ukm\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\management_ukm\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `nama_uk...', 0)
+#1 C:\xampp\htdocs\management_ukm\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `nama_uk...')
+#2 C:\xampp\htdocs\management_ukm\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `nama_uk...')
+#3 C:\xampp\htdocs\management_ukm\system\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `nama_uk...', Array, false)
+#4 C:\xampp\htdocs\management_ukm\system\Model.php(396): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\xampp\htdocs\management_ukm\system\BaseModel.php(943): CodeIgniter\Model->doUpdate(Array, Array)
+#6 C:\xampp\htdocs\management_ukm\system\Model.php(756): CodeIgniter\BaseModel->update(Array, Array)
+#7 C:\xampp\htdocs\management_ukm\app\Controllers\HomeController.php(1037): CodeIgniter\Model->update('1', Array)
+#8 C:\xampp\htdocs\management_ukm\system\CodeIgniter.php(932): App\Controllers\HomeController->update_ukm()
+#9 C:\xampp\htdocs\management_ukm\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+#10 C:\xampp\htdocs\management_ukm\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\management_ukm\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-10-13 03:31:43 --> Unknown column 'visi' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `nama_ukm` SET `nama_ukm` = \'Biro Pelayanan Mahasiswa Kristen (BPMK)\', `keterangan_ukm` = \'Biro Pelayanan Mahasiswa merupakan wadah untuk Mahasiswa Kristen yang ada dilingkungan Kampus Universitas Negeri Manado\', `visi` = \'Menghasilkan sarjana yang mampu menjadi garam dan terang serta memiliki jiwa missioner di tengah Keluarga, Gereja, dan Masyarakat serta Bangsa dan Negara\', `misi` = \'Menghadirkan mahasiswa yang dapat membawa transformasi bagi kampus UNIMA dan mampu membangun gerakan rohani dimana-mana\', `email` = \'bmpk@unima.ac.id\', `nomor_hp` = \'089603448998\'
+WHERE `nama_ukm`.`id_ukm` IN (\'1\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `nama_ukm` SET `nama_ukm` = \'Biro Pelayanan Mahasiswa Kristen (BPMK)\', `keterangan_ukm` = \'Biro Pelayanan Mahasiswa merupakan wadah untuk Mahasiswa Kristen yang ada dilingkungan Kampus Universitas Negeri Manado\', `visi` = \'Menghasilkan sarjana yang mampu menjadi garam dan terang serta memiliki jiwa missioner di tengah Keluarga, Gereja, dan Masyarakat serta Bangsa dan Negara\', `misi` = \'Menghadirkan mahasiswa yang dapat membawa transformasi bagi kampus UNIMA dan mampu membangun gerakan rohani dimana-mana\', `email` = \'bmpk@unima.ac.id\', `nomor_hp` = \'089603448998\'
+WHERE `nama_ukm`.`id_ukm` IN (\'1\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `nama_ukm` SET `nama_ukm` = \'Biro Pelayanan Mahasiswa Kristen (BPMK)\', `keterangan_ukm` = \'Biro Pelayanan Mahasiswa merupakan wadah untuk Mahasiswa Kristen yang ada dilingkungan Kampus Universitas Negeri Manado\', `visi` = \'Menghasilkan sarjana yang mampu menjadi garam dan terang serta memiliki jiwa missioner di tengah Keluarga, Gereja, dan Masyarakat serta Bangsa dan Negara\', `misi` = \'Menghadirkan mahasiswa yang dapat membawa transformasi bagi kampus UNIMA dan mampu membangun gerakan rohani dimana-mana\', `email` = \'bmpk@unima.ac.id\', `nomor_hp` = \'089603448998\'
+WHERE `nama_ukm`.`id_ukm` IN (\'1\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `nama_ukm` SET `nama_ukm` = :nama_ukm:, `keterangan_ukm` = :keterangan_ukm:, `visi` = :visi:, `misi` = :misi:, `email` = :email:, `nomor_hp` = :nomor_hp:
+WHERE `nama_ukm`.`id_ukm` IN :nama_ukm.id_ukm:', [...], false)
+ 5 SYSTEMPATH\Model.php(396): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH\BaseModel.php(943): CodeIgniter\Model->doUpdate([...], [...])
+ 7 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update([...], [...])
+ 8 APPPATH\Controllers\HomeController.php(1037): CodeIgniter\Model->update('1', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\HomeController->update_ukm()
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+11 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

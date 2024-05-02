@@ -1,0 +1,322 @@
+CRITICAL - 2023-09-30 08:56:56 --> Call to a member function getName() on null
+in APPPATH\Controllers\HomeController.php on line 1365.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\HomeController->daftar_bpmk()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-30 08:57:11 --> Call to a member function getName() on null
+in APPPATH\Controllers\HomeController.php on line 1365.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\HomeController->daftar_bpmk()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-30 09:00:30 --> Call to a member function getName() on null
+in APPPATH\Controllers\HomeController.php on line 1365.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\HomeController->daftar_bpmk()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-30 09:00:49 --> Call to a member function getName() on null
+in APPPATH\Controllers\HomeController.php on line 1365.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\HomeController->daftar_bpmk()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-09-30 09:02:21 --> mysqli_sql_exception: Column 'email' cannot be null in D:\Dev\xampp\htdocs\management_ukm\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\Dev\xampp\htdocs\management_ukm\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `ca...', 0)
+#1 D:\Dev\xampp\htdocs\management_ukm\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ca...')
+#2 D:\Dev\xampp\htdocs\management_ukm\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ca...')
+#3 D:\Dev\xampp\htdocs\management_ukm\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ca...', Array, false)
+#4 D:\Dev\xampp\htdocs\management_ukm\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\Dev\xampp\htdocs\management_ukm\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 D:\Dev\xampp\htdocs\management_ukm\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 D:\Dev\xampp\htdocs\management_ukm\app\Controllers\HomeController.php(1390): CodeIgniter\Model->insert(Array)
+#8 D:\Dev\xampp\htdocs\management_ukm\system\CodeIgniter.php(932): App\Controllers\HomeController->daftar_bpmk()
+#9 D:\Dev\xampp\htdocs\management_ukm\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+#10 D:\Dev\xampp\htdocs\management_ukm\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\Dev\xampp\htdocs\management_ukm\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-09-30 09:02:21 --> Column 'email' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `calon_pengurus_bpmk` (`email`, `nama`, `aktiv_pelayanan`, `pdp`, `sbm`, `organisasi`, `muridkan`, `aktiv_kuliah`) VALUES (NULL, NULL, NULL, NULL, \'Screenshot (128).png\', NULL, NULL, \'Screenshot (130).png\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `calon_pengurus_bpmk` (`email`, `nama`, `aktiv_pelayanan`, `pdp`, `sbm`, `organisasi`, `muridkan`, `aktiv_kuliah`) VALUES (NULL, NULL, NULL, NULL, \'Screenshot (128).png\', NULL, NULL, \'Screenshot (130).png\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `calon_pengurus_bpmk` (`email`, `nama`, `aktiv_pelayanan`, `pdp`, `sbm`, `organisasi`, `muridkan`, `aktiv_kuliah`) VALUES (NULL, NULL, NULL, NULL, \'Screenshot (128).png\', NULL, NULL, \'Screenshot (130).png\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `calon_pengurus_bpmk` (`email`, `nama`, `aktiv_pelayanan`, `pdp`, `sbm`, `organisasi`, `muridkan`, `aktiv_kuliah`) VALUES (:email:, :nama:, :aktiv_pelayanan:, :pdp:, :sbm:, :organisasi:, :muridkan:, :aktiv_kuliah:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\HomeController.php(1390): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\HomeController->daftar_bpmk()
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+11 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-09-30 09:04:04 --> mysqli_sql_exception: Column 'email' cannot be null in D:\Dev\xampp\htdocs\management_ukm\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\Dev\xampp\htdocs\management_ukm\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `ca...', 0)
+#1 D:\Dev\xampp\htdocs\management_ukm\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ca...')
+#2 D:\Dev\xampp\htdocs\management_ukm\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ca...')
+#3 D:\Dev\xampp\htdocs\management_ukm\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ca...', Array, false)
+#4 D:\Dev\xampp\htdocs\management_ukm\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\Dev\xampp\htdocs\management_ukm\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 D:\Dev\xampp\htdocs\management_ukm\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 D:\Dev\xampp\htdocs\management_ukm\app\Controllers\HomeController.php(1390): CodeIgniter\Model->insert(Array)
+#8 D:\Dev\xampp\htdocs\management_ukm\system\CodeIgniter.php(932): App\Controllers\HomeController->daftar_bpmk()
+#9 D:\Dev\xampp\htdocs\management_ukm\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+#10 D:\Dev\xampp\htdocs\management_ukm\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\Dev\xampp\htdocs\management_ukm\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-09-30 09:04:04 --> Column 'email' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `calon_pengurus_bpmk` (`email`, `nama`, `aktiv_pelayanan`, `pdp`, `sbm`, `organisasi`, `muridkan`, `aktiv_kuliah`) VALUES (NULL, NULL, NULL, NULL, \'Screenshot (128)_1.png\', NULL, NULL, \'Screenshot (130)_1.png\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `calon_pengurus_bpmk` (`email`, `nama`, `aktiv_pelayanan`, `pdp`, `sbm`, `organisasi`, `muridkan`, `aktiv_kuliah`) VALUES (NULL, NULL, NULL, NULL, \'Screenshot (128)_1.png\', NULL, NULL, \'Screenshot (130)_1.png\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `calon_pengurus_bpmk` (`email`, `nama`, `aktiv_pelayanan`, `pdp`, `sbm`, `organisasi`, `muridkan`, `aktiv_kuliah`) VALUES (NULL, NULL, NULL, NULL, \'Screenshot (128)_1.png\', NULL, NULL, \'Screenshot (130)_1.png\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `calon_pengurus_bpmk` (`email`, `nama`, `aktiv_pelayanan`, `pdp`, `sbm`, `organisasi`, `muridkan`, `aktiv_kuliah`) VALUES (:email:, :nama:, :aktiv_pelayanan:, :pdp:, :sbm:, :organisasi:, :muridkan:, :aktiv_kuliah:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\HomeController.php(1390): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\HomeController->daftar_bpmk()
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+11 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-30 09:36:11 --> Call to a member function findAll() on null
+in APPPATH\Controllers\HomeController.php on line 1456.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\HomeController->kelola_pendaftaran_bpmk()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-30 09:37:17 --> A non-numeric value encountered
+in APPPATH\Controllers\HomeController.php on line 1465.
+ 1 APPPATH\Controllers\HomeController.php(1465): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric value encountered', 'D:\\Dev\\xampp\\htdocs\\management_ukm\\app\\Controllers\\HomeController.php', 1465, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\HomeController->kelola_pendaftaran_bpmk()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-30 09:39:00 --> Call to a member function update() on null
+in APPPATH\Controllers\HomeController.php on line 1468.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\HomeController->kelola_pendaftaran_bpmk()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-30 09:39:02 --> Call to a member function update() on null
+in APPPATH\Controllers\HomeController.php on line 1468.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\HomeController->kelola_pendaftaran_bpmk()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-30 09:43:10 --> syntax error, unexpected '!=' (T_IS_NOT_EQUAL)
+in APPPATH\Controllers\HomeController.php on line 1453.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('D:\\Dev\\xampp\\htdocs\\management_ukm\\app\\Controllers\\HomeController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\HomeController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\HomeController')
+ 4 [internal function]: spl_autoload_call('App\\Controllers\\HomeController')
+ 5 SYSTEMPATH\CodeIgniter.php(890): class_exists('\\App\\Controllers\\HomeController', true)
+ 6 SYSTEMPATH\CodeIgniter.php(484): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-30 10:17:31 --> Class 'App\Helpers\EmailService' not found
+in APPPATH\Controllers\HomeController.php on line 1433.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\HomeController->terima_bpmk()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-30 10:20:02 --> Class 'CodeIgniter\Helper' not found
+in APPPATH\Helpers\EmailService.php on line 6.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(312): include_once()
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('D:\\Dev\\xampp\\htdocs\\management_ukm\\app\\Helpers\\EmailService.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Helpers\\EmailService')
+ 4 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Helpers\\EmailService')
+ 5 APPPATH\Controllers\HomeController.php(1433): spl_autoload_call('App\\Helpers\\EmailService')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\HomeController->terima_bpmk()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-30 10:20:16 --> Class 'CodeIgniter\Helpers' not found
+in APPPATH\Helpers\EmailService.php on line 6.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(312): include_once()
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('D:\\Dev\\xampp\\htdocs\\management_ukm\\app\\Helpers\\EmailService.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Helpers\\EmailService')
+ 4 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Helpers\\EmailService')
+ 5 APPPATH\Controllers\HomeController.php(1433): spl_autoload_call('App\\Helpers\\EmailService')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\HomeController->terima_bpmk()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-30 11:52:31 --> Call to undefined function App\Controllers\debug_to_console()
+in APPPATH\Controllers\HomeController.php on line 1437.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\HomeController->terima_bpmk()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-30 11:52:50 --> Call to undefined function App\Controllers\debug_to_console()
+in APPPATH\Controllers\HomeController.php on line 1437.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\HomeController->terima_bpmk()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-30 11:56:44 --> Call to a member function printDebugger() on null
+in APPPATH\Controllers\HomeController.php on line 1436.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\HomeController->terima_bpmk()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-30 11:57:42 --> syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+in APPPATH\Controllers\HomeController.php on line 1436.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('D:\\Dev\\xampp\\htdocs\\management_ukm\\app\\Controllers\\HomeController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\HomeController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\HomeController')
+ 4 [internal function]: spl_autoload_call('App\\Controllers\\HomeController')
+ 5 SYSTEMPATH\CodeIgniter.php(890): class_exists('\\App\\Controllers\\HomeController', true)
+ 6 SYSTEMPATH\CodeIgniter.php(484): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-30 11:57:43 --> syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+in APPPATH\Controllers\HomeController.php on line 1436.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('D:\\Dev\\xampp\\htdocs\\management_ukm\\app\\Controllers\\HomeController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\HomeController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\HomeController')
+ 4 [internal function]: spl_autoload_call('App\\Controllers\\HomeController')
+ 5 SYSTEMPATH\CodeIgniter.php(890): class_exists('\\App\\Controllers\\HomeController', true)
+ 6 SYSTEMPATH\CodeIgniter.php(484): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-30 11:57:47 --> syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+in APPPATH\Controllers\HomeController.php on line 1436.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('D:\\Dev\\xampp\\htdocs\\management_ukm\\app\\Controllers\\HomeController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\HomeController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\HomeController')
+ 4 [internal function]: spl_autoload_call('App\\Controllers\\HomeController')
+ 5 SYSTEMPATH\CodeIgniter.php(890): class_exists('\\App\\Controllers\\HomeController', true)
+ 6 SYSTEMPATH\CodeIgniter.php(484): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-30 11:57:48 --> syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+in APPPATH\Controllers\HomeController.php on line 1436.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('D:\\Dev\\xampp\\htdocs\\management_ukm\\app\\Controllers\\HomeController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\HomeController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\HomeController')
+ 4 [internal function]: spl_autoload_call('App\\Controllers\\HomeController')
+ 5 SYSTEMPATH\CodeIgniter.php(890): class_exists('\\App\\Controllers\\HomeController', true)
+ 6 SYSTEMPATH\CodeIgniter.php(484): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-30 11:57:49 --> syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+in APPPATH\Controllers\HomeController.php on line 1436.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('D:\\Dev\\xampp\\htdocs\\management_ukm\\app\\Controllers\\HomeController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\HomeController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\HomeController')
+ 4 [internal function]: spl_autoload_call('App\\Controllers\\HomeController')
+ 5 SYSTEMPATH\CodeIgniter.php(890): class_exists('\\App\\Controllers\\HomeController', true)
+ 6 SYSTEMPATH\CodeIgniter.php(484): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-30 11:57:49 --> syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+in APPPATH\Controllers\HomeController.php on line 1436.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('D:\\Dev\\xampp\\htdocs\\management_ukm\\app\\Controllers\\HomeController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\HomeController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\HomeController')
+ 4 [internal function]: spl_autoload_call('App\\Controllers\\HomeController')
+ 5 SYSTEMPATH\CodeIgniter.php(890): class_exists('\\App\\Controllers\\HomeController', true)
+ 6 SYSTEMPATH\CodeIgniter.php(484): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-30 11:57:49 --> syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+in APPPATH\Controllers\HomeController.php on line 1436.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('D:\\Dev\\xampp\\htdocs\\management_ukm\\app\\Controllers\\HomeController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\HomeController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\HomeController')
+ 4 [internal function]: spl_autoload_call('App\\Controllers\\HomeController')
+ 5 SYSTEMPATH\CodeIgniter.php(890): class_exists('\\App\\Controllers\\HomeController', true)
+ 6 SYSTEMPATH\CodeIgniter.php(484): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-30 11:57:50 --> syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+in APPPATH\Controllers\HomeController.php on line 1436.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('D:\\Dev\\xampp\\htdocs\\management_ukm\\app\\Controllers\\HomeController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\HomeController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\HomeController')
+ 4 [internal function]: spl_autoload_call('App\\Controllers\\HomeController')
+ 5 SYSTEMPATH\CodeIgniter.php(890): class_exists('\\App\\Controllers\\HomeController', true)
+ 6 SYSTEMPATH\CodeIgniter.php(484): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-30 11:57:50 --> syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+in APPPATH\Controllers\HomeController.php on line 1436.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('D:\\Dev\\xampp\\htdocs\\management_ukm\\app\\Controllers\\HomeController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\HomeController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\HomeController')
+ 4 [internal function]: spl_autoload_call('App\\Controllers\\HomeController')
+ 5 SYSTEMPATH\CodeIgniter.php(890): class_exists('\\App\\Controllers\\HomeController', true)
+ 6 SYSTEMPATH\CodeIgniter.php(484): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-30 11:57:50 --> syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+in APPPATH\Controllers\HomeController.php on line 1436.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('D:\\Dev\\xampp\\htdocs\\management_ukm\\app\\Controllers\\HomeController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\HomeController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\HomeController')
+ 4 [internal function]: spl_autoload_call('App\\Controllers\\HomeController')
+ 5 SYSTEMPATH\CodeIgniter.php(890): class_exists('\\App\\Controllers\\HomeController', true)
+ 6 SYSTEMPATH\CodeIgniter.php(484): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-30 11:57:50 --> syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+in APPPATH\Controllers\HomeController.php on line 1436.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('D:\\Dev\\xampp\\htdocs\\management_ukm\\app\\Controllers\\HomeController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\HomeController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\HomeController')
+ 4 [internal function]: spl_autoload_call('App\\Controllers\\HomeController')
+ 5 SYSTEMPATH\CodeIgniter.php(890): class_exists('\\App\\Controllers\\HomeController', true)
+ 6 SYSTEMPATH\CodeIgniter.php(484): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-30 11:57:51 --> syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+in APPPATH\Controllers\HomeController.php on line 1436.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('D:\\Dev\\xampp\\htdocs\\management_ukm\\app\\Controllers\\HomeController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\HomeController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\HomeController')
+ 4 [internal function]: spl_autoload_call('App\\Controllers\\HomeController')
+ 5 SYSTEMPATH\CodeIgniter.php(890): class_exists('\\App\\Controllers\\HomeController', true)
+ 6 SYSTEMPATH\CodeIgniter.php(484): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-30 11:57:53 --> syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting ')'
+in APPPATH\Controllers\HomeController.php on line 1436.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('D:\\Dev\\xampp\\htdocs\\management_ukm\\app\\Controllers\\HomeController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\HomeController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\HomeController')
+ 4 [internal function]: spl_autoload_call('App\\Controllers\\HomeController')
+ 5 SYSTEMPATH\CodeIgniter.php(890): class_exists('\\App\\Controllers\\HomeController', true)
+ 6 SYSTEMPATH\CodeIgniter.php(484): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-09-30 12:41:47 --> mysqli_sql_exception: Column 'bahasa_asing' cannot be null in D:\Dev\xampp\htdocs\management_ukm\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\Dev\xampp\htdocs\management_ukm\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `ca...', 0)
+#1 D:\Dev\xampp\htdocs\management_ukm\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ca...')
+#2 D:\Dev\xampp\htdocs\management_ukm\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ca...')
+#3 D:\Dev\xampp\htdocs\management_ukm\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ca...', Array, false)
+#4 D:\Dev\xampp\htdocs\management_ukm\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\Dev\xampp\htdocs\management_ukm\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 D:\Dev\xampp\htdocs\management_ukm\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 D:\Dev\xampp\htdocs\management_ukm\app\Controllers\HomeController.php(1498): CodeIgniter\Model->insert(Array)
+#8 D:\Dev\xampp\htdocs\management_ukm\system\CodeIgniter.php(932): App\Controllers\HomeController->daftar_nnu()
+#9 D:\Dev\xampp\htdocs\management_ukm\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+#10 D:\Dev\xampp\htdocs\management_ukm\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\Dev\xampp\htdocs\management_ukm\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-09-30 12:41:47 --> Column 'bahasa_asing' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `calon_pengurus_nnu` (`email`, `nama`, `mahasiswa_aktif`, `semester`, `pribadi`, `wawasan`, `penampilan`, `bahasa_asing`, `belum_menikah`, `jenis_kelamin`, `tinggi`, `skor`) VALUES (\'chococonya@gmail.com\', \'Aliya\', \'Screenshot (129)_4.png\', \'4\', 1, 1, \'Screenshot (129)_5.png\', NULL, 1, \'Perempuan\', \'150\', 0.6)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `calon_pengurus_nnu` (`email`, `nama`, `mahasiswa_aktif`, `semester`, `pribadi`, `wawasan`, `penampilan`, `bahasa_asing`, `belum_menikah`, `jenis_kelamin`, `tinggi`, `skor`) VALUES (\'chococonya@gmail.com\', \'Aliya\', \'Screenshot (129)_4.png\', \'4\', 1, 1, \'Screenshot (129)_5.png\', NULL, 1, \'Perempuan\', \'150\', 0.6)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `calon_pengurus_nnu` (`email`, `nama`, `mahasiswa_aktif`, `semester`, `pribadi`, `wawasan`, `penampilan`, `bahasa_asing`, `belum_menikah`, `jenis_kelamin`, `tinggi`, `skor`) VALUES (\'chococonya@gmail.com\', \'Aliya\', \'Screenshot (129)_4.png\', \'4\', 1, 1, \'Screenshot (129)_5.png\', NULL, 1, \'Perempuan\', \'150\', 0.6)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `calon_pengurus_nnu` (`email`, `nama`, `mahasiswa_aktif`, `semester`, `pribadi`, `wawasan`, `penampilan`, `bahasa_asing`, `belum_menikah`, `jenis_kelamin`, `tinggi`, `skor`) VALUES (:email:, :nama:, :mahasiswa_aktif:, :semester:, :pribadi:, :wawasan:, :penampilan:, :bahasa_asing:, :belum_menikah:, :jenis_kelamin:, :tinggi:, :skor:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\HomeController.php(1498): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\HomeController->daftar_nnu()
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+11 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

@@ -1,0 +1,64 @@
+CRITICAL - 2023-10-04 09:03:45 --> The original file is not a valid file.
+in SYSTEMPATH\HTTP\Files\UploadedFile.php on line 137.
+ 1 SYSTEMPATH\HTTP\Files\UploadedFile.php(137): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+ 2 APPPATH\Controllers\HomeController.php(1336): CodeIgniter\HTTP\Files\UploadedFile->move('D:\\Dev\\xampp\\htdocs\\management_ukm\\assets/doc/', '_1.')
+ 3 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\HomeController->daftar_bpmk()
+ 4 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+ 5 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-04 09:06:18 --> Call to undefined method CodeIgniter\HTTP\IncomingRequest::hasFile()
+in APPPATH\Controllers\HomeController.php on line 1333.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\HomeController->daftar_bpmk()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-04 10:31:12 --> CodeIgniter\Autoloader\Autoloader::main(): Failed opening required 'class.smtp.php' (include_path='D:\Dev\xampp\php\PEAR')
+in APPPATH\Controllers\HomeController.php on line 20.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-10-04 10:32:03 --> App\Controllers\HomeController::terima_bpmk(): Failed opening required 'class.smtp.php' (include_path='D:\Dev\xampp\php\PEAR')
+in APPPATH\Controllers\HomeController.php on line 1456.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-10-04 10:43:50 --> Call to undefined function App\Controllers\sendmail()
+in APPPATH\Controllers\HomeController.php on line 1464.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\HomeController->terima_bpmk()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-04 10:45:07 --> Too few arguments to function App\Controllers\HomeController::sendmail(), 4 passed in D:\Dev\xampp\htdocs\management_ukm\app\Controllers\HomeController.php on line 1464 and exactly 5 expected
+in APPPATH\Controllers\HomeController.php on line 1432.
+ 1 APPPATH\Controllers\HomeController.php(1464): App\Controllers\HomeController->sendmail('chococonya@gmail.com', 'Aliya', 'Pendaftaran Pengurus Biro Pelayanan Mahasiswa Kristen (BPMK)', '<h3>Halo,Aliya</h3> <p>Selamat! Pendaftaran Anda Sebagai Pengurus Biro Pelayanan Mahasiswa Kristen (BPMK) Telah Diterima.</p><p>Untuk informasi langkah selanjutnya, mohon untuk terus pantau media sosial BPMK atau hubungi pengurus BPMK.</p>')
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\HomeController->terima_bpmk()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-04 10:45:58 --> App\Controllers\HomeController::sendmail(): Failed opening required 'class.smtp.php' (include_path='D:\Dev\xampp\php\PEAR')
+in APPPATH\Controllers\HomeController.php on line 1433.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-10-04 10:46:16 --> Class 'PHPMailer\PHPMailer\PHPMailer' not found
+in APPPATH\Controllers\HomeController.php on line 1435.
+ 1 APPPATH\Controllers\HomeController.php(1461): App\Controllers\HomeController->sendmail('chococonya@gmail.com', 'Aliya', 'Pendaftaran Pengurus Biro Pelayanan Mahasiswa Kristen (BPMK)', '<h3>Halo,Aliya</h3> <p>Selamat! Pendaftaran Anda Sebagai Pengurus Biro Pelayanan Mahasiswa Kristen (BPMK) Telah Diterima.</p><p>Untuk informasi langkah selanjutnya, mohon untuk terus pantau media sosial BPMK atau hubungi pengurus BPMK.</p>')
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\HomeController->terima_bpmk()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-04 10:51:38 --> Class 'PHPMailer\PHPMailer\PHPMailer' not found
+in APPPATH\Controllers\HomeController.php on line 1435.
+ 1 APPPATH\Controllers\HomeController.php(1461): App\Controllers\HomeController->sendmail('aliya@gmail.com', 'Aliya', 'Pendaftaran Pengurus Biro Pelayanan Mahasiswa Kristen (BPMK)', '<h3>Halo,Aliya</h3> <p>Selamat! Pendaftaran Anda Sebagai Pengurus Biro Pelayanan Mahasiswa Kristen (BPMK) Telah Diterima.</p><p>Untuk informasi langkah selanjutnya, mohon untuk terus pantau media sosial BPMK atau hubungi pengurus BPMK.</p>')
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\HomeController->terima_bpmk()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-04 10:53:00 --> Class 'PHPMailer\PHPMailer\PHPMailer' not found
+in APPPATH\Controllers\HomeController.php on line 1435.
+ 1 APPPATH\Controllers\HomeController.php(1461): App\Controllers\HomeController->sendmail('aliya@gmail.com', 'Aliya', 'Pendaftaran Pengurus Biro Pelayanan Mahasiswa Kristen (BPMK)', '<h3>Halo,Aliya</h3> <p>Selamat! Pendaftaran Anda Sebagai Pengurus Biro Pelayanan Mahasiswa Kristen (BPMK) Telah Diterima.</p><p>Untuk informasi langkah selanjutnya, mohon untuk terus pantau media sosial BPMK atau hubungi pengurus BPMK.</p>')
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\HomeController->terima_bpmk()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-04 10:54:49 --> Class 'PHPMailer\PHPMailer\PHPMailer' not found
+in APPPATH\Controllers\HomeController.php on line 1435.
+ 1 APPPATH\Controllers\HomeController.php(1461): App\Controllers\HomeController->sendmail('aliya@gmail.com', 'Aliya', 'Pendaftaran Pengurus Biro Pelayanan Mahasiswa Kristen (BPMK)', '<h3>Halo,Aliya</h3> <p>Selamat! Pendaftaran Anda Sebagai Pengurus Biro Pelayanan Mahasiswa Kristen (BPMK) Telah Diterima.</p><p>Untuk informasi langkah selanjutnya, mohon untuk terus pantau media sosial BPMK atau hubungi pengurus BPMK.</p>')
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\HomeController->terima_bpmk()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
